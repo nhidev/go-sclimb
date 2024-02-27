@@ -1,4 +1,4 @@
-# 24dot7 FE
+# Go Sclimb
 
 ## Recommended system
 
@@ -8,7 +8,7 @@
 ## Structure - monorepo
 
 ```sh
-|- 24dot7
+|- go-sclimb
   |- apps
     |- landing-page #landing page
   |- packages # this folder used to shared source code for apps
