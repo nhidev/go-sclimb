@@ -1,0 +1,7 @@
+**/dist
+**/.turbo
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+pnpm-lock.yaml

@@ -1,0 +1,4 @@
+{
+  "extends": "@24dot7/tsconfig/base.json",
+  "include": ["src"]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@24dot7/common",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "type-check": "tsc",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@24dot7/tsconfig": "workspace:*",
+    "@24dot7/types": "workspace:*",
+    "@febase/eslint-config-ts": "^1.4.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  }
+}

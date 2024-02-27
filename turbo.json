@@ -1,0 +1,40 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "pipeline": {
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dotEnv": [".env.development.local", ".env.development", ".env.local", ".env"]
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"],
+      "dotEnv": [".env.production.local", ".env.production", ".env.local", ".env"]
+    },
+    "type-check": {
+      "outputs": []
+    },
+    "start": {
+      "dependsOn": ["build"]
+    },
+    "deploy:dev": {
+      "cache": false
+    },
+    "deploy:staging": {
+      "cache": false
+    },
+    "deploy:production": {
+      "cache": false
+    },
+    "lint": { "cache": false },
+    "lint:fix": { "cache": false },
+    "i18n:extract": { "cache": false },
+    "i18n:compile": { "cache": false },
+    "i18n:upload": { "cache": false },
+    "i18n:download": { "cache": false },
+    "clean": {
+      "cache": false
+    }
+  }
+}
