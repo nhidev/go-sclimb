@@ -6,7 +6,6 @@ import { CleanBlock } from './CleanBlock';
 import { DiscountBlock } from './DiscountBlock';
 import { EducationBlock } from './EducationBlock';
 import { GraphBlock } from './GraphBlock';
-import { IntegratedOperations } from './IntegratedOperations';
 import { InteriorBlock } from './InteriorBlock';
 import { InteriorSwiper } from './InteriorSwiper';
 import { InventorySavingBlock } from './InventorySavingBlock';
@@ -16,8 +15,6 @@ import { Default, Desktop, Mobile, Tablet } from './MediaQuery';
 import { MessageTooltip } from './MessageTooltip';
 import { NavLink } from './NavLink';
 import { NewBenefits } from './NewBenefits';
-import { PieChartBlock } from './PieChartBlock';
-import { ReportDocument } from './ReportDocument';
 import { RequestBlock } from './RequestBlock';
 import { ResponsibilityManagementBlock } from './ResponsibilityManagementBlock';
 import { SavingBlock } from './SavingBlock';
@@ -42,7 +39,6 @@ export {
   InventorySavingBlock,
   CheckingBlock,
   MembershipOptiosBlock,
-  PieChartBlock,
   DiscountBlock,
   BreakdownBlock,
   ResponsibilityManagementBlock,
@@ -51,8 +47,6 @@ export {
   GraphBlock,
   InteriorBlock,
   NewBenefits,
-  IntegratedOperations,
   InteriorSwiper,
-  ReportDocument,
   ScrollTrigger,
 };

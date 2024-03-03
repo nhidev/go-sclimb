@@ -1,4 +1,3 @@
-import OperationChartSection from './OperationChartSection';
 import PricingHero from './PricingHero';
 import MembershipAndEvents from './MembershipAndEvents';
 import PricingAndMembershipSection from './PricingAndMembershipSection';
@@ -9,7 +8,6 @@ import CrossMemberSlider from './CrossMemberSlider';
 export {
   PricingHero,
   CrossMemberSlider,
-  OperationChartSection,
   MembershipAndEvents,
   PricingAndMembershipSection,
   OperationSection6th,

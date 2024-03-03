@@ -8,8 +8,6 @@ import {
   PricingHero,
   IntroGymSlider,
   PricingAndMembershipSection,
-  OperationSection6th,
-  OperationSection7th,
 } from '@/containers';
 import LeadFormN from '@/containers/Header/LeadForm';
 
@@ -19,14 +17,9 @@ export default function Operation() {
       <Header />
       <main>
         <PricingHero />
-        {/*
-        <OperationChartSection /> */}
         <ScrollTrigger>
           <PricingAndMembershipSection />
-          {/* <IntroGymSlider/> */}
-          {/* <OperationSection6th /> */}
         </ScrollTrigger>
-        {/* <OperationSection7th /> */}
         <LeadFormN />
       </main>
       <Footer />

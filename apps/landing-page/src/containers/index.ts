@@ -13,7 +13,6 @@ import {
   OfficePortfolio,
 } from './InteriorPage';
 import {
-  OperationChartSection,
   PricingHero,
   MembershipAndEvents,
   PricingAndMembershipSection,
@@ -28,7 +27,6 @@ export {
   FixedFooter,
   Header,
   CrossMemberSlider,
-  OperationChartSection,
   MembershipAndEvents,
   PricingAndMembershipSection,
   OperationSection6th,

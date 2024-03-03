@@ -10,7 +10,6 @@ import {
   FixedFooter,
   Header,
   GridCardSection,
-  InteriorConstruction,
   IntroToClimbing,
   FirstVisitHero,
   ClimbingGrades,
@@ -48,19 +47,9 @@ export default async function Interior() {
         <FirstVisitHero />
         <IntroToClimbing className={styles.Interior_IntroToClimbing} />
         <GridCardSection />
-        {/* <InteriorStartup /> */}
-        {/* <IntroGymSlider /> */}
         <ScrollTrigger>
-          {/* <InteriorConstruction /> */}
           <ClimbingGrades/>
-
-          {/* <IntroGymSlider/> */}
-        </ScrollTrigger>
-        
-        {/* <GeneralNoteSection /> */}
-        {/* <OfficePortfolio /> */}
-        {/* <InteriorCourse /> */}
-        {/* <InteriorConsultationSection /> */}
+        </ScrollTrigger>  
         <LeadFormN />
       </main>
       <Footer />

@@ -1,7 +1,6 @@
 import React from 'react';
 import {InventorySavingBlock} from '@/components';
 import { GraphBlock } from '../GraphBlock';
-import { PieChartBlock } from '../PieChartBlock';
 import styles from './checkingBlock.module.scss';
 
 const pieData: any = [

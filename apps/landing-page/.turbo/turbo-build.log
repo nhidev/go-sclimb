@@ -1,5 +1,5 @@
 
-> landing-page@0.1.0 build /Users/thaithiyennhi/Lecle/24dot7_fe/apps/landing-page
+> landing-page@0.1.0 build /Users/odoo/Work/go-sclimb/apps/landing-page
 > next build
 
    ▲ Next.js 14.0.1
@@ -8,26 +8,24 @@
  ✓ Compiled successfully
    Linting and checking validity of types ...
    Collecting page data ...
-   Generating static pages (0/9) ...
-   Generating static pages (2/9) 
-   Generating static pages (4/9) 
-   Generating static pages (6/9) 
- ✓ Generating static pages (9/9) 
+   Generating static pages (0/7) ...
+   Generating static pages (1/7) 
+   Generating static pages (3/7) 
+   Generating static pages (5/7) 
+ ✓ Generating static pages (7/7) 
    Finalizing page optimization ...
    Collecting build traces ...
 
 Route (app)                              Size     First Load JS
-┌ ○ /                                    4.13 kB         454 kB
-├ ○ /_not-found                          885 B          86.6 kB
-├ ○ /1234                                3.27 kB         199 kB
-├ ○ /interior                            485 B           450 kB
-├ ○ /InteriorO                           4.11 kB         232 kB
-└ ○ /operation                           427 B           450 kB
-+ First Load JS shared by all            85.7 kB
-  ├ chunks/1dd3208c-4951a6c51425e08a.js  53.2 kB
-  ├ chunks/53-92b17e5bb19fa91a.js        30.1 kB
-  ├ chunks/main-app-34e3322e471d01f5.js  237 B
-  └ chunks/webpack-e2b9b38c44f871b4.js   2.18 kB
+┌ ○ /                                    1.91 kB         448 kB
+├ ○ /_not-found                          887 B          86.5 kB
+├ ○ /first-visit                         417 B           446 kB
+└ ○ /pricing                             403 B           446 kB
++ First Load JS shared by all            85.6 kB
+  ├ chunks/1d0185a0-3897c62afaabe0dc.js  53.2 kB
+  ├ chunks/302-1ab9f830f500ae06.js       30.1 kB
+  ├ chunks/main-app-82090457954f9e13.js  239 B
+  └ chunks/webpack-3c3ca667663fc445.js   2.12 kB
 
 
 ○  (Static)  prerendered as static HTML

@@ -2,14 +2,9 @@ import { ScrollTrigger } from '@/components';
 import { Footer, Header, FixedFooter, MembershipAndEvents, CrossMemberSlider, IntroGymSlider } from '@/containers';
 
 import {
-  BenefitsSection,
-  GeneralNoteSection,
   IntroductionSection,
   NoteServicesSection,
-  OfficeInteriorSection,
-  FeaturedServiceSection,
-  ServiceSection,
-  // SurveySection,
+  FeaturedServiceSection
 } from '@/containers/HomeN';
 
 import './styles/index.scss';
@@ -21,25 +16,13 @@ export default function HomeN() {
     <>
       <Header />
       <main>
-        <IntroductionSection />
-       
-       
+        <IntroductionSection />    
         <ScrollTrigger>
         <FeaturedServiceSection />
           <MembershipAndEvents />     
-          {/* <OfficeInteriorSection /> */}
-       
-         <CrossMemberSlider /> 
+          <CrossMemberSlider /> 
          <IntroGymSlider/>
         </ScrollTrigger>
-        {/* <GeneralNoteSection /> */}
-        {/* <ScrollTrigger>
-          <ServiceSection />
-           <BenefitsSection />
-        </ScrollTrigger> */}
-        {/* <NoteServicesSection />
-        <OfficeInteriorSection />
-        <GeneralNoteSection /> */}
         <LeadFormN />
       </main>
       <Footer />

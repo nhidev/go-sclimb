@@ -31,7 +31,7 @@ export default function SavingBlock({ className = '', subTitle }: SavingBlockPro
       <div className="savingBlock_b-body">
         <ul>
           {data.map(item => (
-            <li className={item.hasOpacity ? 'hasOpacity' : ''} key={item.title}>
+            <li key={item.title}>
               <div>
                 <p>{item.title}</p>
                 <p>ADULT <span>{item.adult} VND</span></p>
