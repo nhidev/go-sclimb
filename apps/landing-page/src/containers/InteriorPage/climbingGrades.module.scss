@@ -78,8 +78,10 @@
           box-shadow:
             20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
             5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
-          padding: 40rem;
-
+          padding: 30rem;
+          img {
+            height: auto;
+          }
           ul {
             li {
               list-style: none;
@@ -242,7 +244,9 @@
             border-radius: 40rem;
             width: 840rem;
             padding: 40rem;
-
+            img {
+              height: auto;
+            }
             ul {
               display: flex;
               justify-content: space-between;

@@ -64,7 +64,9 @@ img {
     box-shadow:
       20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
       5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
-
+      img {
+        height: auto;
+      }
     .ant-modal-close {
       background-color: transparent;
       &:hover {

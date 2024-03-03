@@ -88,14 +88,12 @@
 
           .introToClimbing-block {
             position: relative;
-            padding: 30rem 0 40rem;
+            padding: 30rem;
 
             img {
               z-index: 1;
               position: relative;
               height: auto;
-              width: 295rem;
-
               &:nth-child(2) {
                 position: absolute;
                 z-index: 2;
@@ -183,6 +181,7 @@
 
               img {
                 width: 708rem;
+                height: auto;
 
                 &:nth-child(2) {
                   top: 140rem;

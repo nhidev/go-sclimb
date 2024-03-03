@@ -18,8 +18,8 @@ const IntroToClimbing = memo(({ className = '' }: IntroToClimbingProps) => (
           </h4>
         </div>
         <div className="introToClimbing-content fade-up-element">
-          <div className="iintroToClimbing-block">
-            <Image width={600} height={500} quality={100} src="/imagesN/first-time.jpg" alt="document" />
+          <div className="introToClimbing-block">
+            <Image width={660} height={540} quality={100} src="/imagesN/first-time.jpg" alt="document" />
           </div>
         </div>
       </div>

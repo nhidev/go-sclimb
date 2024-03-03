@@ -1,5 +1,5 @@
 .SchechuleBlock {
-  padding: 30rem 20rem 0 20rem;
+  padding: 30rem;
   border-radius: 20rem;
   background: var(--ffffff, #fff);
   box-shadow:
@@ -22,8 +22,11 @@
       p {
         font-size: 16rem;
         font-weight: 500;
-        color: var(--414751);
+        color:var(--798087, #798087)
       }
+    }
+    img {
+      height: auto;
     }
     .schechuleBlock_b-body {
       border-radius: 12rem;
@@ -118,6 +121,9 @@
         p {
           font-size: 20rem;
         }
+      }
+      img {
+        height: auto;
       }
       .schechuleBlock_b-body {
         border-radius: 20rem;

@@ -1,5 +1,5 @@
 .CleanBlock {
-  padding: 30rem 20rem 30rem 20rem;
+  padding: 30rem;
   border-radius: 20rem;
   background: #fff7ef;
   overflow: hidden;
@@ -19,8 +19,11 @@
       p {
         font-size: 16rem;
         font-weight: 500;
-        color: var(--414751);
+        color:var(--798087, #798087)
       }
+    }
+    img {
+      height: auto;
     }
   }
 }
@@ -40,6 +43,9 @@
         p {
           font-size: 20rem;
         }
+      }
+      img {
+        height: auto;
       }
     }
   }

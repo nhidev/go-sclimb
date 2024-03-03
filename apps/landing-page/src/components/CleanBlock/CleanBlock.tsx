@@ -10,7 +10,7 @@ export default function CleanBlock({ className = '' }: CleanBlockProps) {
         <h3>Join the Community</h3>
         <p>Want to climb more often? You won't want to keep paying for Day Passes - consider a Membership or Punch Card and learn which is right for you.</p>
       </div>
-      <Image width={700} height={400} quality={100} src="/imagesN/community.jpg" alt="table" />
+      <Image width={667} height={500} quality={100} src="/imagesN/community.jpg" alt="table" />
     </div>
   );
 }

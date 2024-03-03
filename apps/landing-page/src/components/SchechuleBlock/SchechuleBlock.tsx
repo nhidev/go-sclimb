@@ -65,7 +65,7 @@ export default function SchechuleBlock({className = ''}: SchechuleBlockProps) {
         <h3>Host a Party or Group Event</h3>
         <p>Our parties include everything you need to throw the party of a lifetime, at a price that you will love.</p>
       </div>
-      <Image width={700} height={400} quality={100} src="/imagesN/event.jpg" alt="table" />
+      <Image width={667} height={500} quality={100} src="/imagesN/event.jpg" alt="table" />
     </div>
   );
 }
