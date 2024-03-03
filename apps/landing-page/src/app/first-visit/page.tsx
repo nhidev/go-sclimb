@@ -15,7 +15,6 @@ import {
   ClimbingGrades,
   IntroGymSlider,
 } from '@/containers';
-import { GeneralNoteSection } from '@/containers/HomeN';
 import LeadFormN from '@/containers/Header/LeadForm';
 
 export const metadata: Metadata = {
