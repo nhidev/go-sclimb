@@ -59,7 +59,7 @@
   :global {
     .g-cta-button {
       background-color: var(--09101-d);
-      box-shadow: none;
+      box-shadow: none !important;
       padding: 0;
       height: 44rem;
       span {

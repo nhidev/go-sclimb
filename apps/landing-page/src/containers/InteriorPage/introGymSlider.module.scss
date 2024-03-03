@@ -106,7 +106,7 @@
           display: flex;
           align-items: flex-start;
           justify-content: center;
-          margin-right: 40rem;
+          margin-right: 0;
           flex-direction: column;
           h4 {
             font-size: 18rem;
@@ -258,9 +258,9 @@
           .introGymSlider-desc {
             padding: 30rem;
             border-radius: 16rem;
-
             align-items: self-start;
             flex-direction: column;
+            margin-right: 40rem;
             h4 {
               font-size: 24rem;
               margin-right: 0;

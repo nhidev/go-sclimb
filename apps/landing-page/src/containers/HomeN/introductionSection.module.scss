@@ -10,16 +10,17 @@
   min-height: 278px;
   max-height: none;
   position: relative;
+  overflow: hidden;
   &:after {
     content: "";
     background-size: cover;
     background-position: right 0% top;
     background-repeat: no-repeat;
     background-image: url('/imagesN/colbolt-background.png');
-    height: 100%;
-    width: 40%;
-    top: 0;
-    right: 0;
+    height: 150%;
+    width: 100%;
+    top: -50%;
+    right: -50%;
     position: absolute;
     display: block;
 }
@@ -31,7 +32,13 @@
       justify-content: center;
       align-items: center;
       gap: 32rem;
-
+      overflow: hidden;
+      &:after {
+        height: 100%;
+        width: 40%;
+        top: 0;
+        right: 0;    
+      }
       .introduction_b-content {
         z-index: 1;
         .introduction-top {

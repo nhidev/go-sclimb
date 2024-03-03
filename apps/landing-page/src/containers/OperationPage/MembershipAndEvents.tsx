@@ -24,11 +24,11 @@ const messages = [
   },
   {
     placement: 'right',
-    content: 'Cha cha cha! 🤭 Vũ💪',
+    content: 'Cha cha cha.. 🤭 Vũ💪',
   },
   {
     placement: 'right',
-    content: 'Yep, yep, yep, nice, nice, yep ...🤜🤛',
+    content: 'Yep, yep, yep, nice, yep ...🤜🤛',
   },
 ];
 

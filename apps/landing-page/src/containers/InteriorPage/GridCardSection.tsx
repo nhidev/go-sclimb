@@ -28,7 +28,7 @@ const data = [
     id: 4,
     title: 'RESPECT',
     icon: '/iconsN/respect.webp',
-    description: 'All OTR participants are expected to respect other individuals and conduct themselves in good order. \n  Persons deemed by OTR staff to be behaving in an unsafe or disorderly manner will be asked to leave the facility',
+    description: 'All Sclimb participants are expected to respect other individuals and conduct themselves in good order. \n  Persons deemed by Sclimb staff to be behaving in an unsafe or disorderly manner will be asked to leave the facility',
   },
 ];
 
