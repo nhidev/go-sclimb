@@ -1,5 +1,5 @@
 import { ScrollTrigger } from '@/components';
-import { Footer, Header, FixedFooter, OperationSection4th } from '@/containers';
+import { Footer, Header, FixedFooter, MembershipAndEvents, CrossMemberSlider, IntroGymSlider } from '@/containers';
 
 import {
   BenefitsSection,
@@ -7,8 +7,7 @@ import {
   IntroductionSection,
   NoteServicesSection,
   OfficeInteriorSection,
-  OperationsManagementSection,
-  SaasSection,
+  FeaturedServiceSection,
   ServiceSection,
   // SurveySection,
 } from '@/containers/HomeN';
@@ -22,22 +21,29 @@ export default function HomeN() {
     <>
       <Header />
       <main>
-
         <IntroductionSection />
-        <OperationSection4th />
-        <OperationsManagementSection />
+       
+       
         <ScrollTrigger>
-          <ServiceSection />
-          <SaasSection />
-          <BenefitsSection />
+        <FeaturedServiceSection />
+          <MembershipAndEvents />     
+          {/* <OfficeInteriorSection /> */}
+       
+         <CrossMemberSlider /> 
+         <IntroGymSlider/>
         </ScrollTrigger>
-        <NoteServicesSection />
+        {/* <GeneralNoteSection /> */}
+        {/* <ScrollTrigger>
+          <ServiceSection />
+           <BenefitsSection />
+        </ScrollTrigger> */}
+        {/* <NoteServicesSection />
         <OfficeInteriorSection />
-        <GeneralNoteSection />
+        <GeneralNoteSection /> */}
         <LeadFormN />
       </main>
       <Footer />
-      <FixedFooter textBtn='무료 상담하기' />
+      <FixedFooter textBtn='Send a message' />
     </>
   );
 }

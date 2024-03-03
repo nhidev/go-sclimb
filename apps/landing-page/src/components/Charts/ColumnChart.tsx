@@ -100,8 +100,8 @@ const ColumnChart = ({ ...rest }) => {
     },
     maxColumnWidth: isMobile ? 6 : 18,
     columnStyle: {
-      fill: '#be7346',
-      stroke: '#be7346',
+      fill: '#f6871f',
+      stroke: '#f6871f',
       lineWidth: 1,
       radius: [isMobile ? 6 : 8, isMobile ? 6 : 8, 0, 0],
       fontFamily: 'Pretendard, sans-serif',

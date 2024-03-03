@@ -70,7 +70,7 @@
           h4 {
             color: var(--d-29-d-7-e, #d29d7e);
             font-size: 20rem;
-            font-weight: 700;
+            font-weight: normal;
             line-height: 140%;
             letter-spacing: -0.2rem;
             white-space: break-spaces;
@@ -126,7 +126,7 @@
             }
 
             &.isActive {
-              border: 3rem solid var(--be-7346, #be7346);
+              border: 3rem solid var(--be-7346, #f6871f);
               background: var(--ebd-5-c-7, #ebd5c7);
               box-shadow:
                 5rem 5rem 10rem 0rem rgba(139, 140, 160, 0.25),
@@ -172,7 +172,7 @@
           h4 {
             color: var(--d-29-d-7-e, #d29d7e);
             font-size: 20rem;
-            font-weight: 700;
+            font-weight: normal;
             line-height: 140%;
             letter-spacing: -0.2rem;
             text-align: right;
@@ -270,7 +270,7 @@
             }
 
             h4 {
-              font-size: 26rem;
+              font-size: 24rem;
             }
           }
 
@@ -280,7 +280,7 @@
             display: flex;
             gap: 40rem;
             justify-content: center;
-            padding: 60rem;
+            padding: 40rem;
 
             .interiorConstruction-block {
               width: 300rem;
@@ -288,7 +288,7 @@
               margin-bottom: 0;
 
               h4 {
-                font-size: 26rem;
+                font-size: 24rem;
                 margin-bottom: 25rem;
               }
 
@@ -347,7 +347,7 @@
             }
 
             h4 {
-              font-size: 26rem;
+              font-size: 24rem;
               text-align: left;
 
               span {
@@ -369,7 +369,7 @@
 
             .interiorConstruction-block {
               max-height: max-content;
-              padding: 30rem;
+              padding: 10rem 15rem;
             }
           }
         }

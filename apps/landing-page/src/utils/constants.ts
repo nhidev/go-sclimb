@@ -51,55 +51,49 @@ export const TAB_CONTENT = [
   },
 ];
 
-export const COLUMNS_OPERATION = [
+export const MEMBERSHIP_OPTIONS = [
   {
-    title: '품목명',
-    dataIndex: 'name',
-    key: 'name',
+    title: 'MEMBERSHIP TYPE',
+    dataIndex: 'type',
+    key: 'type',
   },
   {
-    title: '단가',
-    dataIndex: 'price',
-    key: 'price',
+    title: 'ADULT',
+    dataIndex: 'adult',
+    key: 'adult',
   },
   {
-    title: '품목 사용량',
-    dataIndex: 'itemUsage',
-    key: 'itemUsage',
-  },
+    title: 'KID/STUDENT',
+    dataIndex: 'young',
+    key: 'young',
+  }
 ];
 
-export const DATA_OPERATION = [
+export const DATA_MEMBERSHIP = [
   {
     key: '1',
-    name: '종이컵 12oz',
-    price: '24,000 원',
-    itemUsage: '20',
+    type: '1 MONTH',
+    adult: '1.400.000 VND',
+    young: '900.000 VND',
   },
   {
     key: '2',
-    name: '계피원두 (할리스)',
-    price: '9,900 원',
-    itemUsage: '5',
+    type: '3 MONTHS',
+    adult: '3.250.000 VND',
+    young: '2.200.000 VND',
   },
   {
     key: '3',
-    name: '매일우유 바리스타',
-    price: '15,000 원',
-    itemUsage: '5',
+    type: '6 MONTHS',
+    adult: '5.350.000 VND',
+    young: '3.690.000 VND',
   },
   {
     key: '4',
-    name: '물티슈',
-    price: '3,000 원',
-    itemUsage: '13',
-  },
-  {
-    key: '5',
-    name: '복사용지 A4',
-    price: '2,500 원',
-    itemUsage: '15',
-  },
+    type: '1 YEAR',
+    adult: '10.270.000 VND',
+    young: '6.970.000 VND',
+  }
 ];
 
 export const COLUMNS_SERVICE = [
@@ -158,7 +152,7 @@ export const PIE_01_DATA: any = [
     key: '원두 커피',
     type: '원두 커피',
     value: 32,
-    color: '#BE7346',
+    color: '#f6871f',
   },
   {
     key: '물티슈',
@@ -215,7 +209,7 @@ export const PIE_02_DATA: any = [
     key: 'TEAM A',
     type: 'TEAM A',
     value: 48,
-    color: '#BE7346',
+    color: '#f6871f',
   },
   {
     key: 'TEAM B',
@@ -248,7 +242,7 @@ export const PIE_03_DATA: any = [
     key: 1,
     type: '원두 커피',
     value: 37,
-    color: '#BE7346',
+    color: '#f6871f',
   },
   {
     key: 2,
@@ -287,7 +281,7 @@ export const PIE_04_DATA: any = [
     key: 1,
     type: '양이 부족함',
     value: 50,
-    color: '#BE7346',
+    color: '#f6871f',
   },
   {
     key: 2,

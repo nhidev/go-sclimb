@@ -1,23 +1,23 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ganote.kr'),
-  title: '총무노트 - 사무실 운영 서비스',
+  metadataBase: new URL('https://sclimb.com.vn'),
+  title: 'Sclimb - Membership & Pricing',
   description:
-    '사무실 관련 이슈는 모두 총무 몫? 사무실 청소부터 직원 복지 서비스까지, 총무노트가 10년간의 노하우로 운영합니다.',
+    'Sclimb rock climbing gym provides everyone with a world class indoor rock climbing, fitness, and community experience in state of the art facilities.',
   keywords:
-    'ganote, 총무업무, 총무업무메뉴얼, 경리업무, 경리업무메뉴얼, 사무실청소, 사무실간식, 사무실관리, 오피스관리, 사무실청소용역, 사무실청소견적, 정기청소업체, 사무실입주청소업체, 사무실과자, 회사간식추천, 기업간식, 회사탕비실, 직원휴게실, 탕비실과자, 사무실커피머신렌탈, 오피스용품, 사무실청소, 사무실입주청소, 사무실관리, 오피스관리, 사무실유지보수, 오피스유지보수',
-  openGraph: {
-    title: '총무노트 - 사무실 운영 서비스',
-    description:
-    '사무실 관련 이슈는 모두 총무 몫? 사무실 청소부터 직원 복지 서비스까지, 총무노트가 10년간의 노하우로 운영합니다.',
-    images: [
+    'rock climbing gym, bouldering gym, indor climbing gym, leo núi nhân tạo, leo núi trong nhà, thể thao mạo hiểm',
+ openGraph: {
+  title: 'Sclimb - Membership & Pricing',
+  description:
+  'Sclimb rock climbing gym provides everyone with a world class indoor rock climbing, fitness, and community experience in state of the art facilities.',
+ images: [
       { 
         url: "/imagesN/meta-operation-page.png",
-        alt: "ganote"
+        alt: "sclimb"
       }
     ],
-    url: "https://ganote.kr/operation"
+    url: "https://sclimb.com.vn"
   },
 };
 

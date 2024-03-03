@@ -11,24 +11,20 @@ import styles from './officeInteriorSection.module.scss';
 
 const INTERIOR_SLIDE_LIST = [
   {
-    image: 'interior-slide-01.png',
-    title: '강남 인근 IT 기업 사무실',
-    desc: '프로젝트 기간: 1개월',
+    image: 'slide-01.jpg',
+     quote: 'A wonderful place, with many activities to enjoy! Come and have fun. Staff are very professional, friendly! Drinks are fantastic as well! You can ask a bartender to create a new drink your mood desires.',
   },
   {
-    image: 'interior-slide-02.png',
-    title: '용산구 컨설팅 회사 사무실',
-    desc: '프로젝트 기간: 3개월',
+    image: 'slide-02.jpg',
+     quote: 'I had an amazing time at this indoor rock climbing gym!',
   },
   {
-    image: 'interior-slide-03.png',
-    title: '자동차 대기업 분사 사무실',
-    desc: '프로젝트 기간: 1개월',
+    image: 'slide-03.jpg',
+     quote: 'The space is beautiful and clean, this is my destination every time I have free time and is also where I come to exercise and interact with people.',
   },
   {
-    image: 'interior-slide-04.png',
-    title: '성수동 패션 브랜드 사무실',
-    desc: '프로젝트 기간: 2개월',
+    image: 'slide-04.jpg',
+     quote: 'A wonderful space and lots of happiness with different colors, climbing is not only good for health, it is a sport that entertains the spirit when stressed or pressure at work.',
   },
 ];
 
@@ -40,33 +36,10 @@ const OfficeInteriorSection = memo(({ className = '' }: OfficeInteriorSectionPro
       <div className="office-interior_top">
         <h2>OUR COMMUNITY</h2>
         <p>Whether you are an experienced climber or brand-new to Sclimb Gym, <br />there’s never been a better time to pay us a visit. <br />It seriously might change your life, It has for many people!</p>
-        <Default>
-          {withTheme(
-            <Button
-              className="our-service-btn g-cta-button"
-              type="primary"
-              icon={<Image width={12} height={10} src="/iconsN/ic-arrow-right.svg" alt="go to operation page" />}
-              onClick={() => router.push('/interior')}
-            >
-              서비스 알아보기
-            </Button>
-          )}
-        </Default>
+        
       </div>
       <div className="office-interior_bottom">
         <InteriorSwiper slideList={INTERIOR_SLIDE_LIST} />
-        <Mobile>
-          {withTheme(
-            <Button
-              className="our-service-btn g-cta-button"
-              type="primary"
-              icon={<Image width={12} height={10} src="/iconsN/ic-arrow-right.svg" alt="go to operation page" />}
-              onClick={() => router.push('/interior')}
-            >
-              서비스 알아보기
-            </Button>
-          )}
-        </Mobile>
       </div>
     </section>
   );

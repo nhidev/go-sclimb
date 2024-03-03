@@ -1,7 +1,7 @@
 import { memo } from 'react';
 
 import { IntegratedOperations } from '@/components';
-import { ItemSavingBlock } from '@/components/ItemSavingBlock';
+import { MembershipOptiosBlock } from '@/components/MembershipOptiosBlock';
 import { SavingBlock } from '@/components/SavingBlock';
 import { COLUMNS_SERVICE, DATA_SERVICE, PIE_01_DATA, PIE_02_DATA, PIE_03_DATA } from '@/utils/constants';
 import styles from './serviceSection.module.scss';
@@ -43,13 +43,13 @@ const ServiceSection = memo(({ className = '' }: ServiceSectionProps) => (
         msgList={msgList}
         className="fade-up-element"
       />
-      <ItemSavingBlock
+      <MembershipOptiosBlock
         columns={COLUMNS_SERVICE}
         data={DATA_SERVICE}
         subTitle={'매달 알아서, \n자동 발주 정기 배송 시스템'}
         subTitleMobile={`매달 알아서 배송해 주는 자동 발주 정기 배송 시스템`}
         title={`소모성 물품 구매 시간 \n100% 절감`}
-        className={`${styles.ServiceSection_ItemSavingBlock} fade-up-element`}
+        className={`${styles.ServiceSection_MembershipOptiosBlock} fade-up-element`}
       />
       <SavingBlock
         className={`${styles.ServiceSection_SavingBlock} fade-up-element`}

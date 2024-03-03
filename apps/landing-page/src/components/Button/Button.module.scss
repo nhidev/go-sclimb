@@ -67,6 +67,11 @@
   background-color: #b0b0b0;
   pointer-events: none;
 }
+
+.ButtonSquare {
+ border-radius: 0;
+}
+
 @media only screen and (max-device-width: 1024px) {
   .Button {
     font-size: 14px;

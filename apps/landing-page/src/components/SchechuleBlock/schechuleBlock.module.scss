@@ -20,7 +20,7 @@
         max-width: 250rem;
       }
       p {
-        font-size: 12rem;
+        font-size: 16rem;
         font-weight: 500;
         color: var(--414751);
       }
@@ -104,13 +104,12 @@
 
 @media (min-width: 768px) {
   .SchechuleBlock {
-    padding: 80rem 40rem 0 40rem;
+    padding: 40rem;
     border-radius: 40rem;
     :global {
       .schechuleBlock_b-head {
         margin-bottom: 60rem;
         max-width: 500rem;
-        padding-left: 40rem;
         h3 {
           font-size: 40rem;
           margin-bottom: 20rem;

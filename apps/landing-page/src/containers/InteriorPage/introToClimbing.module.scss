@@ -1,0 +1,198 @@
+.IntroToClimbing {
+  padding: 130rem 0;
+  background: var(--ffffff, #fff);
+
+  :global {
+    .introToClimbing_b-container {
+      padding: 0 20rem;
+      max-width: 1280rem;
+      margin: 0 auto;
+      box-sizing: content-box;
+      text-align: center;
+
+      .introToClimbing_b-head {
+        text-align: center;
+        max-width: 232rem;
+        margin: 0 auto 60rem;
+
+        label {
+          border-radius: 100rem;
+          background: var(--f-8-f-1-ec, #f8f1ec);
+          margin-bottom: 12rem;
+          display: inline-flex;
+          padding: 0 16rem;
+          height: 28rem;
+
+          img {
+            width: 16rem;
+            height: auto;
+            margin-right: 2rem;
+          }
+
+          p {
+            color: var(--798087, #798087);
+            font-size: 14rem;
+            font-weight: 700;
+            line-height: 28rem;
+          }
+        }
+
+        h2 {
+          font-size: 30rem;
+          font-weight: 700;
+          line-height: 140%;
+          letter-spacing: -1px;
+
+          &:nth-child(2) {
+            color: var(--d-29-d-7-e, #d29d7e);
+          }
+        }
+      }
+
+      .introToClimbing_b-body {
+        .introToClimbing-title {
+          margin-bottom: 32rem;
+
+          h3 {
+            font-size: 24rem;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: -1px;
+            margin-bottom: 8rem;
+            text-align: left;
+
+            span {
+              max-width: 221rem;
+              display: inline-block;
+            }
+          }
+
+          h4 {
+            color:var(--798087, #798087);
+            font-size: 16rem;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: -0.2rem;
+            text-align: left;
+          }
+        }
+
+        .introToClimbing-content {
+          background: var(--f-8-f-1-ec, #f8f1ec);
+          box-shadow:
+            20rem 20rem 60rem 0px rgba(139, 140, 160, 0.4),
+            5rem 5rem 15rem 0px rgba(139, 140, 160, 0.15);
+          border-radius: 20rem;
+          padding: 0;
+          overflow-y: hidden;
+
+          .introToClimbing-block {
+            position: relative;
+            padding: 30rem 0 40rem;
+
+            img {
+              z-index: 1;
+              position: relative;
+              height: auto;
+              width: 295rem;
+
+              &:nth-child(2) {
+                position: absolute;
+                z-index: 2;
+                top: 60rem;
+                right: 34rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .IntroToClimbing {
+    padding: 160rem 0;
+
+    :global {
+      .introToClimbing_b-container {
+        .introToClimbing_b-head {
+          max-width: 100%;
+          margin: 0 auto 80rem;
+
+          label {
+            margin-bottom: 20rem;
+            padding: 0 20rem;
+            height: 38rem;
+
+            img {
+              width: 20rem;
+              margin-right: 2rem;
+            }
+
+            p {
+              font-size: 16rem;
+              line-height: 38rem;
+            }
+          }
+
+          h2 {
+            font-size: 48rem;
+          }
+        }
+
+        .introToClimbing_b-body {
+          display: flex;
+          justify-content: space-between;
+
+          .introToClimbing-title {
+            margin-bottom: 0;
+            padding-top: 80rem;
+            max-width: 500rem;
+
+            h3 {
+              font-size: 40rem;
+              text-align: left;
+              text-transform: uppercase;
+
+              span {
+                max-width: 100%;
+                white-space: break-spaces;
+              }
+            }
+
+            h4 {
+              font-size: 20rem;
+              text-align: left;
+
+              span {
+                max-width: 100%;
+                white-space: break-spaces;
+              }
+            }
+          }
+
+          .introToClimbing-content {
+            border-radius: 40rem;
+            width: 840rem;
+            max-height: 618rem;
+            overflow-y: hidden;
+
+            .introToClimbing-block {
+              padding: 40rem;
+
+              img {
+                width: 708rem;
+
+                &:nth-child(2) {
+                  top: 140rem;
+                  right: 95rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

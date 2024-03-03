@@ -22,9 +22,9 @@
         }
     }
   }
-  .ServiceSection_ItemSavingBlock {
+  .ServiceSection_MembershipOptiosBlock {
     :global {
-      .itemSavingBlock_b-body {
+      .membershipOptiosBlockb-body {
         table .ant-table-thead tr .ant-table-cell {
           background-color: var(--ebd-5-c-7);
         }
@@ -70,7 +70,7 @@
       }
     }
 
-    .ServiceSection_ItemSavingBlock {
+    .ServiceSection_MembershipOptiosBlock {
       flex: 1;
     }
   

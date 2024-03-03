@@ -138,22 +138,13 @@ const Header = memo(() => {
                   Pricing & Membership
                 </NavLink>
               </li>
-              <li>
-                <NavLink href='/events' exact scroll={true}>
-                  Events
-                </NavLink>
-              </li>
-              <li>
-                <NavLink href='/contact' exact scroll={true}>
-                  Contact & Hours
-                </NavLink>
-              </li>
+              
             </ul>
           </nav>
           <div className="header_right">
             {withTheme(
               <Button type="primary" onClick={(event) => {
-                setLeadFormModal({ open: true, isDownload: false });
+                setLeadFormModal({ open: true, isDownload: true });
                 event.currentTarget.blur();
               }}>
                 SChill Menu

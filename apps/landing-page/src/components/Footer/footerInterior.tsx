@@ -23,7 +23,7 @@ export default function FooterInterior() {
           </button>
         </ToggleModal>
         <a
-          href="https://internal.ganote.kr/landing_page/download"
+          href="https://sclimb.com.vn/landing_page/download"
           download
           className={`${stylesBtn?.Button}  ${stylesBtn?.ButtonOutlinedWhite}`}
         >

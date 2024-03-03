@@ -34,7 +34,7 @@ type Unknown = Record<string, string>;
 
 const initContacts: IContacts = {
   oid: '00D5h000008rsSd',
-  retURL: 'ganote.kr',
+  retURL: 'sclimb.com.vn',
   lead_source: 'WebToLead',
   '00N5h00000HZmHD': '',
   '00N5h00000HZm7L': '',
@@ -62,7 +62,7 @@ const handlePostRequest = async (data: IContacts): Promise<Unknown | undefined> 
 
   try {
     const response = await fetch(
-      `https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5h000008rsSd`,
+      `https:/example.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5h000008rsSd`,
       {
         method: 'POST',
         mode: 'no-cors',
@@ -123,10 +123,10 @@ const LeadForm = () => {
       const link = document.createElement('a');
 
       // Set the download attribute with the desired filename
-      link.download = '총무노트_소개서.pdf';
+      link.download = 'menu.pdf';
 
       // Set the href attribute to the path of your PDF file
-      link.href = 'https://internal.ganote.kr/landing_page/download';
+      link.href = 'https://sclimb.com.vn/landing_page/download';
 
       // Append the link to the document body
       document.body.appendChild(link);
@@ -184,7 +184,7 @@ const LeadForm = () => {
               총무노트에 연락 주세요
             </p>
             <input type="hidden" name="oid" value="00D5h000008rsSd" />
-            <input type="hidden" name="retURL" value="ganote.kr" />
+            <input type="hidden" name="retURL" value="sclimb.com.vn" />
             <input type="hidden" id="lead_source" name="lead_source" value="WebToLead" />
             {/* <input type="hidden" name="debug" value={1} />
             <input type="hidden" name="debugEmail" value="adeline@newbrick.io" /> */}

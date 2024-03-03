@@ -9,30 +9,34 @@ import {
   Footer,
   FixedFooter,
   Header,
-  Interior2ndSection,
+  GridCardSection,
   InteriorConstruction,
-  InteriorDocument,
-  InteriorHero,
-  InteriorSchedule,
+  IntroToClimbing,
+  FirstVisitHero,
+  ClimbingGrades,
+  IntroGymSlider,
 } from '@/containers';
+import { GeneralNoteSection } from '@/containers/HomeN';
 import LeadFormN from '@/containers/Header/LeadForm';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ganote.kr'),
-  title: '총무노트 - 사무실 인테리어',
-  description: '비용은 줄이고 공간 효율성은 높이세요. 우리 회사에 딱 맞는 인테리어 레이아웃을 제안드립니다.',
-  keywords:
-    'ganote, 오피스이전, 사무실인테리어, 공유오피스인테리어, 오피스인테리어, 강남사무실인테리어, 사무공간인테리어, 사옥인테리어, 사무실인테리어비용, 사무실인테리어견적서, 사무실리모델링업체, 사무실인테리어회사, 사무실철거, 사무실원상복구',
-  openGraph: {
-    title: '총무노트 - 사무실 인테리어',
-    description: '비용은 줄이고 공간 효율성은 높이세요. 우리 회사에 딱 맞는 인테리어 레이아웃을 제안드립니다.',
-    images: [
+  metadataBase: new URL('https://sclimb.com.vn'),
+  title: 'Sclimb - First visit',
+  description:
+  'Sclimb rock climbing gym provides everyone with a world class indoor rock climbing, fitness, and community experience in state of the art facilities.',
+keywords:
+  'rock climbing gym, bouldering gym, indor climbing gym, leo núi nhân tạo, leo núi trong nhà, thể thao mạo hiểm',
+ openGraph: {
+    title: 'Sclimb - First visit',
+    description:
+  'Sclimb rock climbing gym provides everyone with a world class indoor rock climbing, fitness, and community experience in state of the art facilities.',
+ images: [
       {
         url: "/imagesN/meta-interior-page.png",
-        alt: "ganote"
+        alt: "sclimb"
       }
     ],
-    url: "https://ganote.kr/interior"
+    url: "https://sclimb.com.vn"
   },
 };
 
@@ -41,24 +45,26 @@ export default async function Interior() {
     <>
       <Header />
       <main>
-        <InteriorHero />
-        <InteriorDocument className={styles.Interior_InteriorDocument} />
-        <Interior2ndSection />
+        <FirstVisitHero />
+        <IntroToClimbing className={styles.Interior_IntroToClimbing} />
+        <GridCardSection />
         {/* <InteriorStartup /> */}
-        {/* <InteriorOffice /> */}
+        {/* <IntroGymSlider /> */}
         <ScrollTrigger>
-          <InteriorConstruction />
-          <InteriorSchedule />
+          {/* <InteriorConstruction /> */}
+          <ClimbingGrades/>
 
-
+          {/* <IntroGymSlider/> */}
         </ScrollTrigger>
+        
+        {/* <GeneralNoteSection /> */}
         {/* <OfficePortfolio /> */}
         {/* <InteriorCourse /> */}
         {/* <InteriorConsultationSection /> */}
         <LeadFormN />
       </main>
       <Footer />
-      <FixedFooter textBtn="견적 문의하기" />
+      <FixedFooter textBtn="Send a message" />
     </>
   );
 }

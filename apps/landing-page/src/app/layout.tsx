@@ -44,12 +44,12 @@ const Pretendard = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ganote.kr'),
-  title: '총무노트 - 국내 유일 오피스 전문 GA SaaS 플랫폼',
+  metadataBase: new URL('https://sclimb.com.vn'),
+  title: 'Sclimb - Rock climbing gym',
   description:
-    '통합 관리 통합 정산 │ 오피스 클리닝, 인테리어, 사무실 수리 등 수많은 총무의 업무들, 통합하여 효율적으로 일하세요!',
+    'Sclimb rock climbing gym provides everyone with a world class indoor rock climbing, fitness, and community experience in state of the art facilities.',
   keywords:
-    'ganote, 총무노트, 총무업무, 총무업무메뉴얼, 경리업무, 경리업무메뉴얼, 사무실청소, 사무실간식, 사무실인테리어, 강남사무실인테리어, 공유오피스인테리어, 오피스인테리어, 오피스용품, 사무실청소업체, 사무실 인테리어 공사, 사무실과자, 회사간식추천, 기업간식, 회사탕비실, 직원휴게실, 탕비실과자, 사무실커피머신렌탈, 오피스용품, 사무실정기청소, 사무실입주청소, 사무실관리, 오피스관리, 사무실유지보수, 오피스유지보수',
+    'rock climbing gym, bouldering gym, indor climbing gym, leo núi nhân tạo, leo núi trong nhà, thể thao mạo hiểm',
   icons: {
     icon: '../../public/logo.png',
   },
@@ -60,16 +60,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: '총무노트 - 국내 유일 오피스 전문 GA SaaS 플랫폼',
+    title: 'Sclimb - Rock climbing gym',
     description:
-    '통합 관리 통합 정산 │ 오피스 클리닝, 인테리어, 사무실 수리 등 수많은 총무의 업무들, 통합하여 효율적으로 일하세요!',
+    'Sclimb rock climbing gym provides everyone with a world class indoor rock climbing, fitness, and community experience in state of the art facilities.',
     images: [
       { 
         url: "/imagesN/meta-main-page.png",
-        alt: "ganote"
+        alt: "sclimb"
       }
     ],
-    url: "https://ganote.kr"
+    url: "https://sclimb.com.vn"
   },
 };
 

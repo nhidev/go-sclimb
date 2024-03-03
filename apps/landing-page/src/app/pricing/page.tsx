@@ -5,9 +5,9 @@ import {
   Footer,
   FixedFooter,
   Header,
-  OperationHero,
-
-  OperationSection5th,
+  PricingHero,
+  IntroGymSlider,
+  PricingAndMembershipSection,
   OperationSection6th,
   OperationSection7th,
 } from '@/containers';
@@ -18,14 +18,15 @@ export default function Operation() {
     <>
       <Header />
       <main>
-        <OperationHero />
-        {/* <OperationSlider />
+        <PricingHero />
+        {/*
         <OperationChartSection /> */}
         <ScrollTrigger>
-          <OperationSection5th />
-          <OperationSection6th />
+          <PricingAndMembershipSection />
+          {/* <IntroGymSlider/> */}
+          {/* <OperationSection6th /> */}
         </ScrollTrigger>
-        <OperationSection7th />
+        {/* <OperationSection7th /> */}
         <LeadFormN />
       </main>
       <Footer />

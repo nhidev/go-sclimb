@@ -51,8 +51,8 @@ const InteriorSwiper = ({ className = '', slideList }: InteriorSwiperProps) => {
                 />
               </Mobile>
               <div className="slide-item_desc">
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
+                {item.title && <h3>{item.title}</h3>}
+                {item.desc &&<p>{item.desc}</p>}
                 {item.quote && (
                   <div className="slide-item_quote">
                     <Image src={`/iconsN/quote.svg`} alt="quote icon" height={30} width={30} />

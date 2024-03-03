@@ -10,7 +10,7 @@ import { IntegratedOperations } from './IntegratedOperations';
 import { InteriorBlock } from './InteriorBlock';
 import { InteriorSwiper } from './InteriorSwiper';
 import { InventorySavingBlock } from './InventorySavingBlock';
-import { ItemSavingBlock } from './ItemSavingBlock';
+import { MembershipOptiosBlock } from './MembershipOptiosBlock';
 import { LoungeInfo } from './LoungeInfo';
 import { Default, Desktop, Mobile, Tablet } from './MediaQuery';
 import { MessageTooltip } from './MessageTooltip';
@@ -41,7 +41,7 @@ export {
   SavingBlock,
   InventorySavingBlock,
   CheckingBlock,
-  ItemSavingBlock,
+  MembershipOptiosBlock,
   PieChartBlock,
   DiscountBlock,
   BreakdownBlock,

@@ -16,42 +16,20 @@ const GeneralNoteSection = memo(({ className = '' }: GeneralNoteSectionProps) =>
   return (
     <section className={`${styles.GeneralNoteSection} ${className}`}>
       <div className="genera-note_top">
-        <p>{`총무님의 크고 작은 고민 \n10년의 총무 노하우로`}</p>
-        <h2>
-          총무노트가 <span>스마트하게 <br/></span> 해결해 드릴 게요!
-        </h2>
-        <Default>
-          {withTheme(
-            <Button
-              className="submit-btn g-cta-button"
-              icon={<Image width={12} height={10} src="/iconsN/ic-arrow-right.svg" alt="icon" />}
-              onClick={(event) => {
-                setLeadFormModal({ open: true, isDownload: false });
-                event.currentTarget.blur();
-              }}
-            > 
-              총무 전문가와 상담 신청하기
-            </Button>
-          )}
-        </Default>
+      <p>Our Address</p>
+        {/* <h2>Come Climb With Us</h2>
+        <p>Our Address</p>
+        <p>Hours of Operation</p>
+        <p>Monday to Sunday 10 AM – 10 PM</p>
+        <p>Any Questions?</p>
+        <p> tufas@tufasboulderlounge.com</p>
+        <p>215-360-3999</p>
+        <p>tufas@tufasboulderlounge.com</p> */}
       </div>
       <div className="genera-note_bottom">
-        <Image width={318} height={201} src="/imagesN/note-banner.svg" priority alt="note banner" />
+         <Image width={700} height={400} src="/imagesN/sclimb-map.png" priority alt="sclimb map" />
       </div>
-      <Mobile>
-        {withTheme(
-          <Button
-            className="submit-btn g-cta-button"
-            icon={<Image width={12} height={10} src="/iconsN/ic-arrow-right.svg" alt="arrow icon" />}
-            onClick={(event) => {
-              setLeadFormModal({ open: true, isDownload: false });
-              event.currentTarget.blur();
-            }}
-          >
-            총무 전문가와 상담 신청하기
-          </Button>
-        )}
-      </Mobile>
+      
     </section>
   );
 });

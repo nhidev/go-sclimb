@@ -17,7 +17,7 @@
         margin-bottom: 12rem;
       }
       p {
-        font-size: 12rem;
+        font-size: 16rem;
         font-weight: 500;
         color: var(--414751);
       }
@@ -27,7 +27,7 @@
 
 @media (min-width: 768px) {
   .CleanBlock {
-    padding: 76rem 0 0 76rem;
+    padding: 40rem;
     border-radius: 40rem;
     :global {
       .cleanBlock_b-head {

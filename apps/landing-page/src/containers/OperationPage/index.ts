@@ -1,17 +1,17 @@
 import OperationChartSection from './OperationChartSection';
-import OperationHero from './OperationHero';
-import OperationSection4th from './OperationSection4th';
-import OperationSection5th from './OperationSection5th';
+import PricingHero from './PricingHero';
+import MembershipAndEvents from './MembershipAndEvents';
+import PricingAndMembershipSection from './PricingAndMembershipSection';
 import OperationSection6th from './OperationSection6th';
 import OperationSection7th from './OperationSection7th';
-import OperationSlider from './OperationSlider';
+import CrossMemberSlider from './CrossMemberSlider';
 
 export {
-  OperationHero,
-  OperationSlider,
+  PricingHero,
+  CrossMemberSlider,
   OperationChartSection,
-  OperationSection4th,
-  OperationSection5th,
+  MembershipAndEvents,
+  PricingAndMembershipSection,
   OperationSection6th,
   OperationSection7th,
 };

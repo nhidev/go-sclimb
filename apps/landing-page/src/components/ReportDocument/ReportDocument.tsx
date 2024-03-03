@@ -8,7 +8,7 @@ const pieData: any = [
     key: 1,
     type: '22%',
     value: 22,
-    color: '#BE7346',
+    color: '#f6871f',
   },
   {
     key: 2,

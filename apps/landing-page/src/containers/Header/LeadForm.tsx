@@ -1,16 +1,14 @@
 'use client';
 
-import { Button, Checkbox, Form, Input, Modal, Radio } from 'antd';
+import { Button, Form, Input, Modal } from 'antd';
 import { useAtom } from 'jotai';
 import Image from 'next/image';
 import { memo, useState } from 'react';
-
 import { leadFormModalAtom } from '@/atoms';
 import withTheme from '@/theme';
 import { IContacts, Unknown } from '@/types/leadFormType';
 
-
-
+const { TextArea } = Input;
 declare global {
   interface Window {
     dataLayer: any[];
@@ -31,7 +29,7 @@ const handlePostRequest = async (data: IContacts): Promise<Unknown | undefined> 
     }
 
     const response = await fetch(
-      `https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5h000008rsSd`,
+      `https:/examle.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5h000008rsSd`,
       {
         method: 'POST',
         mode: 'no-cors',
@@ -70,30 +68,7 @@ const LeadFormN = memo(() => {
     setOpenSuccessModal(false);
   };
 
-  const onDownload = () => {
-    const link = document.createElement('a');
-
-    // Set the download attribute with the desired filename
-    link.download = '총무노트_서비스소개서.pdf';
-
-    // Set the href attribute to the path of your PDF file
-    link.href = 'https://internal.ganote.kr/landing_page/download';
-
-    // Append the link to the document body
-    document.body.append(link);
-
-    // Trigger a click event on the link to start the download
-    link.click();
-
-    // Remove the link from the document body after the download is initiated
-    link.remove();
-    /*Down pdf*/
-  };
-
   const onFinish = async (values: any) => {
-    if (leadFormModal.isDownload) {
-      onDownload();
-    }
     try {
       setConfirmLoading(true);
 
@@ -110,7 +85,7 @@ const LeadFormN = memo(() => {
 
       const params = {
         oid: '00D5h000008rsSd',
-        retURL: 'ganote.kr',
+        retURL: 'sclimb.com.vn',
         lead_source: 'WebToLead',
         ...values,
         ...(process.env.NODE_ENV === 'development' && { ...debugValues }),
@@ -141,9 +116,6 @@ const LeadFormN = memo(() => {
   };
 
   const handleSuccessBtn = () => {
-    if (leadFormModal.isDownload) {
-      onDownload();
-    }
     handleCancelSuccessModal();
   }
 
@@ -161,19 +133,14 @@ const LeadFormN = memo(() => {
             width={620}
             closeIcon={<Image width={18} height={18} src="/iconsN/Icon_close.svg" alt="close" />}
           >
+             {leadFormModal.isDownload ?<Image width={600} height={700} src="/imagesN/menu.png" alt="schill menu" />:
+             (
+              <>
             <div className="form_b-head">
-              {leadFormModal.isDownload ? (
-                <>
-                  <h4>딱 5개 항목만 입력하고</h4>
-                  <h4>간편하게 소개서 받으세요</h4>
-                </>
-              ) : (
-                <>
-                  <h4>무료 상담 한번으로</h4>
-                  <h4>총무 업무가 쉬워집니다</h4>
-                </>
-              )}
-            </div>
+                <h4>WANT TO REACH OUT?</h4>
+                <h4>We’re here to help!</h4>
+               <p>Feel free to call with any questions or stop by for a tour!</p>
+            </div> 
             <Form
               form={form}
               onFinish={onFinish}
@@ -186,73 +153,49 @@ const LeadFormN = memo(() => {
             >
               <div className="form_b-scroll">
                 <Form.Item
-                  label="성함"
-                  name="last_name"
-                  rules={[{ required: true, message: '성함 형식이 올바르지 않습니다.' }]}
+                  label="Full name"
+                  name="full_name"
+                  rules={[{ required: true, message: 'Name format is incorrect.'}]}
                 >
-                  <Input placeholder="성함" />
-                </Form.Item>
+                  <Input placeholder="Your name" />
+                </Form.Item>              
                 <Form.Item
-                  label="회사명"
-                  name="company"
-                  rules={[{ required: true, message: '회사명 형식이 올바르지 않습니다.' }]}
-                >
-                  <Input placeholder="회사명" />
-                </Form.Item>
-                <Form.Item
-                  label="연락처"
+                  label="Phone number"
                   name="phone"
                   rules={[
                     () => {
                       return {
                         validator(_rule, value) {
-                          const phoneRegex = new RegExp(/^\d{11}$/);
+                          const phoneRegex = new RegExp(/^\d{10}$/);
 
                           if (phoneRegex.test(value) && !!value) {
                             return Promise.resolve();
                           }
-                          return Promise.reject('올바른 휴대전화 번호를 입력해주세요');
+                          return Promise.reject('Please enter the correct phone number');
                         },
                       }
                     },
                   ]}
                 >
-                  <Input placeholder="010-0000-0000" />
+                  <Input placeholder="0100-000-000" />
                 </Form.Item>
                 <Form.Item
-                  label="회사 이메일"
+                  label="Email"
                   name="email"
-                  rules={[{ required: true, type: 'email', message: '올바른 이메일 주소를 입력해주세요.' }]}
+                  rules={[{ required: true, type: 'email', message: 'Please enter a valid email address.' }]}
                 >
-                  <Input placeholder="24.7@24dot7company.com" />
+                  <Input placeholder="yourmail@example.com" />
                 </Form.Item>
-
-                <div className="form_b-bot">
-                  <p>상담 희망 서비스</p>
-                  <Form.Item name="00N5h00000Hb6Vg" className="g-radio" rules={[{ required: true, message: '' }]}>
-                    <Radio.Group>
-                      <Radio value={'사무실 운영'}>사무실 운영 관리</Radio>
-                      <Radio value={'인테리어'}>인테리어</Radio>
-                    </Radio.Group>
-                  </Form.Item>
-                </div>
+                <Form.Item
+                  label="Message"
+                  name="message"
+                  rules={[{ required: true, message: 'Please enter a message' }]}
+                >
+                  <TextArea rows={4}  placeholder="Message for us" />
+                </Form.Item>
+               
               </div>
 
-              <Form.Item
-                className="g-checkbox"
-                name="00N5h00000HZmHD"
-                valuePropName="checked"
-                rules={[
-                  {
-                    required: true,
-                    transform: value => value || undefined,
-                    type: 'boolean',
-                    message: '',
-                  },
-                ]}
-              >
-                <Checkbox>상담 신청을 위한 필수 개인정보 수집 및 활용에 동의합니다</Checkbox>
-              </Form.Item>
               <Form.Item shouldUpdate className="form-submit">
                 {() => (
                   <Button
@@ -267,11 +210,13 @@ const LeadFormN = memo(() => {
                     }
                     loading={confirmLoading}
                   >
-                    {leadFormModal.isDownload ? `소개서 다운받기` : `무료 상담 받기`}
+                   Submit
                   </Button>
                 )}
               </Form.Item>
             </Form>
+            </> )}
+
           </Modal>
 
           <Modal
@@ -284,23 +229,14 @@ const LeadFormN = memo(() => {
             closeIcon={<Image width={18} height={18} src="/iconsN/Icon_close.svg" alt="close" />}
           >
             <div className="modal_b-head">
-              {leadFormModal.isDownload ? (
-                <>
-                  <h3>소개서 다운로드가 시작됩니다</h3>
-                  <p>다운로드가 시작되지 않으면 아래 문의로 연락 주세요</p>
-                </>
-              ) : (
-                <>
-                  <h3>상담이 접수되었습니다</h3>
-                  <p>{`남겨주신 연락처로 \n담당자가 곧 연락드리겠습니다`}</p>
-                </>
-              )}
+              <h3>Your message has been received</h3>
+              <p>{`A person in charge will contact you shortly using the contact information you provided.`}</p>
             </div>
             <div className="modal_b-body">
               <Image
                 width={255}
                 height={247}
-                src={leadFormModal.isDownload ? '/imagesN/success-download-img.svg' : '/imagesN/success-img.svg'}
+                src=' /imagesN/success-img.svg'
                 alt="success"
               />
             </div>
@@ -310,7 +246,7 @@ const LeadFormN = memo(() => {
                 className="g-cta-button"
                 onClick={() => handleSuccessBtn()}
               >
-                {leadFormModal.isDownload ? '소개서 다운받기' : '확인'}
+                Close
               </Button>
             </div>
           </Modal>

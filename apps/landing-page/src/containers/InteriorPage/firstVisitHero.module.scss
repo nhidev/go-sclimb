@@ -1,0 +1,104 @@
+.FirstVisitHero {
+  padding: 48rem 0;
+  background-image: linear-gradient(80deg,rgba(24,17,17,0.5) 0%,rgba(2,0,0,0.3) 100%),url('/imagesN/heror-02.jpg');
+  background-position: 50%;
+  background-size: 100%;
+  background-size: cover;
+  height: auto;
+  min-height: 278px;
+  max-height: none;
+  position: relative;
+  
+  :global {
+    .hero-container {
+      padding: 0 20rem;
+      max-width: 1150rem;
+      margin: 0 auto;
+      box-sizing: content-box;
+      .hero_b-left {
+        margin-bottom: 32rem;
+        .hero-top {
+          text-align: center;
+          margin-bottom: 30rem;
+          h1 {
+            color: #fff;
+            font-size: 34rem;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: -1px;
+            margin-bottom: 8rem;
+            white-space: break-spaces;
+          }
+          p {
+            color: #fff;
+            font-size: 18rem;
+            font-weight: 500;
+            white-space: break-spaces;
+          }
+        }
+        .hero-bottom {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8rem;
+        }
+      }
+      .hero_b-right {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .hero-bottom {
+          text-align: center;
+          margin-bottom: 18rem;
+          img {
+            width: 220rem;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .FirstVisitHero {
+    padding: 142rem 0 182rem;
+    min-height: 75vh;
+    :global {
+      .hero-container {
+        display: flex;
+        align-items: center;
+        .hero_b-left {
+          margin-bottom: 0;
+          width: calc(100% - 600rem);
+          .hero-top {
+            text-align: left;
+            margin-bottom: 60rem;
+            h1 {
+              font-size: 56rem;
+              margin-bottom: 16rem;
+            }
+            p {
+              font-size: 20rem;
+            }
+          }
+          .hero-bottom {
+            gap: 16rem;
+            justify-content: flex-start;
+          }
+        }
+        .hero_b-right {
+          display: block;
+          width: 600rem;
+
+          .hero-bottom {
+            margin-bottom: 0;
+            img {
+              width: 400rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

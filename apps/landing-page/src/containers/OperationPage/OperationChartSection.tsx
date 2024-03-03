@@ -48,7 +48,7 @@ const OperationChartSection = memo(() => (
           {pieDatas.map((blockItem: any) => (
             <PieChartBlock
               key={blockItem.title}
-              items={blockItem.items}
+              content={blockItem.items}
               title={blockItem.title}
               className="chartSection-pieChartBlock"
             />

@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-
+import {
+  SavingBlock
+} from '@/components';
 import styles from './timeSpentBlock.module.scss';
 import { Default, Mobile } from '../MediaQuery';
 
@@ -8,39 +10,29 @@ export default function TimeSpentBlock({ className = '' }: TimeSpentBlockProps) 
   return (
     <div className={`${styles.TimeSpentBlock} ${className}`}>
       <div className="timeSpentBlock_b-head">
-        <h3>비품 관리 소요 시간</h3>
+        <h3>SO… WHAT’S IN A MEMBERSHIP?</h3>
       </div>
       <div className="timeSpentBlock_b-body">
         <div className="timeSpentBlock_b-top">
-          <Mobile>
-              <Image
-                src={`/imagesN/time-required-chart_mobile.png`}
-                width={295}
-                height={160}
-                unoptimized
-                alt="time required"
-              />
-          </Mobile>
-          <Default>
-            <div className="timeSpentBlock-chart">
-              <Image
-                src={`/imagesN/time-required-chart.svg`}
-                width={295}
-                height={160}
-                alt="time required"
-                quality={100}
-              />
-            </div>
-            </Default>
-          <p>기존</p>
+          <Image src='/iconsN/infinity.svg' alt="quote icon" height={100} width={100} />
+          <p>Unlimited Climbing</p>
         </div>
-        <div className="timeSpentBlock-vs">VS</div>
-
-        <div className="timeSpentBlock_b-bot">
-          <Image src={`/imagesN/book-1.svg`} width={110} height={144} alt="book" />
-          <p>총무노트</p>
+        <div className="timeSpentBlock_b-top">
+          <Image src='/iconsN/climbing-shoe.svg' alt="quote icon" height={100} width={100} />
+          <p>Exclusive Gear Discount</p>
+        </div>
+          <div className="timeSpentBlock_b-top">
+          <Image src='/iconsN/group-people.svg' alt="quote icon" height={100} width={100} />
+          <p>Free Guest Passes</p>
+        </div> 
+        <div className="timeSpentBlock_b-top">
+          <Image src='/iconsN/calendar.svg' alt="quote icon" height={100} width={100} />
+          <p>Free & Discounted Classes & Events</p>
         </div>
       </div>
+      <div className="timeSpentBlock_b-bot">
+      <p>Membership offers the best value and most perks, but we also offer day passes so you can come see our gyms and get to know us before joining.</p>
+    </div>
     </div>
   );
 }

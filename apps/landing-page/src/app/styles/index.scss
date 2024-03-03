@@ -59,7 +59,6 @@ img {
 
 .g-modal.ant-modal {
   .ant-modal-content {
-    padding: 20rem 0;
     border-radius: 20rem;
     background: var(--ffffff, #fff);
     box-shadow:
@@ -82,7 +81,7 @@ img {
           line-height: 140%;
           letter-spacing: -0.2rem;
           &:nth-child(2) {
-            color: var(--be-7346, #be7346);
+            color: var(--be-7346, #f6871f);
           }
         }
       }
@@ -163,7 +162,7 @@ img {
 
   @media (min-width: 768px) {
     .ant-modal-content {
-      padding: 60rem;
+      padding: 40rem;
       border-radius: 40rem;
       .ant-modal-close {
         top: 60rem;
@@ -177,7 +176,7 @@ img {
       }
       .ant-modal-body {
         .form_b-head {
-          margin-bottom: 40rem;
+          margin-bottom: 30rem;
           padding: 0;
           h4 {
             font-size: 26rem;
@@ -231,13 +230,7 @@ img {
             padding: 0;
             background: var(--ffffff, #fff);
             max-height: initial;
-            & > .ant-form-item {
-              width: calc(50% - 10rem);
-              display: inline-block;
-              &:nth-child(2n) {
-                margin-left: 20rem;
-              }
-            }
+           
           }
         }
       }
