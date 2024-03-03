@@ -54,11 +54,11 @@
           tr {
             .ant-table-cell {
               font-family: 'Pretendard', sans-serif;
-              font-size: 12rem;
+              font-size: 12rem 2rem;
               font-weight: 500;
               line-height: 170%;
               color: var(--798087, #798087);
-              padding: 0;
+              padding: 12rem 0;
               height: auto;
             }
             &:last-child {
