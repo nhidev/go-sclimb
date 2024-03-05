@@ -11,27 +11,32 @@
       margin: 0 auto;
       box-sizing: content-box;
       text-align: center;
+
       .picingAndMembershipSectionTop_b-head {
         text-align: center;
         margin-bottom: 40rem;
+
         h2 {
           font-size: 30rem;
           font-weight: 700;
           line-height: 140%;
           letter-spacing: -1px;
+
           &:first-child {
             color: var(--ffb-25-c);
           }
         }
       }
-      .pricingAndMembershipSectionTop_b-body {
-      }
+
+      .pricingAndMembershipSectionTop_b-body {}
     }
   }
 }
+
 .Line {
   padding: 80rem 0 20rem;
   text-align: center;
+
   :global {
     i {
       width: 5rem;
@@ -40,6 +45,7 @@
       background-color: var(--a-9-a-9-a-9, #b1b7bd);
       position: relative;
       display: inline-block;
+
       &::after {
         content: '';
         width: 1px;
@@ -56,22 +62,26 @@
 
 .PricingAndMembershipSectionMiddle {
   margin-bottom: 20rem;
+
   :global {
     .pricingAndMembershipSectionMiddle_container {
       padding: 0 20rem;
       max-width: 1280rem;
       margin: 0 auto;
       box-sizing: content-box;
+
       .pricingAndMembershipSectionMiddle_b-left {
         margin-bottom: 20rem;
         position: relative;
         z-index: 1;
       }
+
       .pricingAndMembershipSectionMiddle_b-right {
         position: relative;
         z-index: 2;
       }
     }
+
     .show-desktop {
       display: none;
     }
@@ -97,12 +107,13 @@
       .pricingAndMembershipSectionTop_container {
         .pricingAndMembershipSectionTop_b-head {
           margin-bottom: 80rem;
+
           h2 {
             font-size: 48rem;
           }
         }
-        .pricingAndMembershipSectionTop_b-body {
-        }
+
+        .pricingAndMembershipSectionTop_b-body {}
       }
     }
   }
@@ -110,6 +121,7 @@
   .Line {
     padding: 140rem 0 60rem;
     text-align: center;
+
     :global {
       i {
         &::after {
@@ -121,26 +133,32 @@
 
   .PricingAndMembershipSectionMiddle {
     margin-bottom: 40rem;
+
     :global {
-      .pricingAndMembershipSectionhMiddle_container {
+      .pricingAndMembershipSectionMiddle_container {
         display: flex;
         align-items: center;
         justify-content: center;
-        .pricingAndMembershipSectionhMiddle_b-left {
+
+        .pricingAndMembershipSectionMiddle_b-left {
           width: calc(50% - 20rem);
           margin-bottom: 0;
           margin-right: 40rem;
+
           .pricingAndMembershipSectionMiddle-savingBlock {
             margin-bottom: 40rem;
           }
         }
+
         .pricingAndMembershipSectionMiddle_b-right {
           width: calc(50% - 20rem);
         }
       }
+
       .show-mobile {
         display: none;
       }
+
       .show-desktop {
         display: block;
       }
