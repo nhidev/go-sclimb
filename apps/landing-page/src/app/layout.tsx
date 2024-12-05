@@ -1,47 +1,18 @@
 import { AntdRegistry } from '@ant-design/nextjs-registry';
-import localFont from 'next/font/local';
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({
+  weight: ['400', '600', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 import type { Metadata, Viewport } from 'next';
 
 import './globals.scss';
 
 import Script from 'next/script';
-
-const Pretendard = localFont({
-  src: [
-    {
-      path: '../../public/fonts/Pretendard-Regular.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/Pretendard-Regular.ttf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/Pretendard-Medium.woff2',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/Pretendard-SemiBold.woff2',
-      weight: '600',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/Pretendard-Bold.woff2',
-      weight: '700',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/Pretendard-Bold.ttf',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-pretendard',
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://sclimb.com.vn'),
@@ -62,9 +33,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sclimb - Rock climbing gym',
     description:
-    'Sclimb rock climbing gym provides everyone with a world class indoor rock climbing, fitness, and community experience in state of the art facilities.',
+      'Sclimb rock climbing gym provides everyone with a world class indoor rock climbing, fitness, and community experience in state of the art facilities.',
     images: [
-      { 
+      {
         url: "/imagesN/meta-main-page.png",
         alt: "sclimb"
       }
@@ -82,7 +53,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${Pretendard?.className} ${Pretendard?.variable}`} suppressHydrationWarning={true}>
+      <body className={montserrat.className} suppressHydrationWarning={true}>
         <Script id="google-tag-manager" strategy="beforeInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

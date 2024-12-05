@@ -16,6 +16,7 @@
   overflow: auto;
   margin-right: 3px;
 }
+
 .formBody::-webkit-scrollbar {
   position: absolute;
   width: 10px;
@@ -40,30 +41,35 @@
   text-align: center;
   font-size: 28px;
   font-family:
-    var(--font-Pretendard-bold),
+    var(--font-Montserrat-bold),
     -apple-system,
     BlinkMacSystemFont,
     'Malgun Gothic',
     sans-serif;
   margin-bottom: 40px;
 }
+
 .visible {
   display: none;
 }
+
 .phoneInput {
   position: relative;
   width: 100%;
   height: max-content;
 }
+
 .phoneInput input {
   color: transparent;
 }
+
 .virtualPhone {
   pointer-events: none;
   top: 50%;
   left: calc(40px + 46px);
   position: absolute;
 }
+
 .specialLabel,
 .radioField {
   padding: 0 40px;
@@ -75,7 +81,7 @@
   color: var(--neutral-black);
   font-size: 16px;
   font-family:
-    var(--font-Pretendard-bold),
+    var(--font-Montserrat-bold),
     -apple-system,
     BlinkMacSystemFont,
     'Malgun Gothic',
@@ -93,6 +99,7 @@
   margin-right: 8px;
   accent-color: #2ea380;
 }
+
 .radioField input:checked,
 .acceptInput input:checked {
   appearance: auto;
@@ -111,6 +118,7 @@
   border: 2px solid #b0b0b0;
   z-index: 1;
 }
+
 .radioField input:checked::before {
   border: 2px solid #2ea380;
 }
@@ -142,15 +150,18 @@
   display: flex;
   align-items: center;
 }
+
 .acceptInput input {
   width: 22px;
   height: 22px;
 }
+
 .acceptInput input::before {
   border-radius: 4px;
   width: 17px;
   height: 17px;
 }
+
 .acceptInput input:checked:before {
   display: none;
 }
@@ -161,10 +172,12 @@
   justify-content: flex-start;
   align-items: center;
 }
+
 .radioField input {
   width: 22px;
   height: 22px;
 }
+
 .radioField input::before {
   border-radius: 50%;
 }
@@ -181,6 +194,7 @@
   z-index: 1;
   box-shadow: 6px 0px 6px 0px rgba(18, 18, 18, 0.06);
 }
+
 .formFooter button {
   width: calc(100% - 13px);
   display: flex;
@@ -189,34 +203,41 @@
   border: 0;
   cursor: pointer;
 }
+
 .footerBtn {
   background-color: transparent;
 }
+
 .downloadLink {
   cursor: pointer;
   width: 100%;
   position: relative;
   z-index: -1;
 }
+
 .disableLink {
   pointer-events: none;
 }
+
 @media (max-width: 600px) {
   .leadForm {
     max-height: calc(100vh - 140px);
     width: 400px;
     padding-bottom: 83px;
   }
+
   .formTitle {
     font-size: 24px;
     margin-bottom: 20px;
   }
+
   .inputFiled,
   .specialLabel,
   .radioField {
     padding: 0 20px;
     margin-bottom: 20px;
   }
+
   .acceptInput {
     padding: 20px 0;
     margin: 0 20px;
@@ -239,10 +260,12 @@
     width: 334px;
     padding-bottom: 83px;
   }
+
   .formTitle {
     font-size: 20px;
     margin-bottom: 20px;
   }
+
   .inputFiled,
   .specialLabel,
   .radioField {
@@ -253,14 +276,17 @@
   .label {
     font-size: 12px;
   }
+
   .textFiled input {
     height: 40px;
     font-size: 14px;
   }
+
   .radioField input {
     width: 20px;
     height: 20px;
   }
+
   .acceptInput input {
     max-width: 20px;
     min-width: 20px;
@@ -276,9 +302,11 @@
   .radioField label {
     font-size: 14px;
   }
+
   .acceptInput label {
     width: 85%;
   }
+
   .formFooter {
     padding: 16px 15px 32px;
   }
@@ -289,8 +317,10 @@
     width: 300px;
   }
 }
+
 @media (max-width: 600px) {
   @supports (-webkit-touch-callout: none) {
+
     /* CSS specific to iOS devices */
     .formFooter button {
       width: 100%;

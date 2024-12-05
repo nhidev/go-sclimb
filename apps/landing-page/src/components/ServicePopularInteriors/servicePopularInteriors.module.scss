@@ -12,7 +12,7 @@
 .PopularInteriorsTitle {
   font-size: 28px;
   font-family:
-    var(--font-Pretendard-bold),
+    var(--font-Montserrat-bold),
     -apple-system,
     BlinkMacSystemFont,
     'Malgun Gothic',
@@ -42,7 +42,7 @@
 .itemTitle {
   font-size: 16px;
   font-family:
-    var(--font-Pretendard-bold),
+    var(--font-Montserrat-bold),
     -apple-system,
     BlinkMacSystemFont,
     'Malgun Gothic',
@@ -54,9 +54,11 @@
   font-size: 14px;
   font-weight: 400;
 }
+
 .PopularInteriorsItem img {
   border-radius: 16px;
 }
+
 @media (max-width: 991px) {
   .PopularInteriors {
     padding: 45px 30px;
@@ -67,13 +69,16 @@
   .PopularInteriorsList {
     flex-wrap: wrap;
   }
+
   .PopularInteriorsItem {
     width: calc(100% / 2 - 16px);
     margin-bottom: 16px;
   }
+
   .PopularInteriorsItem img {
     width: 100%;
   }
+
   .PopularInteriorsContainer {
     max-width: 767px;
   }
@@ -85,6 +90,7 @@
       padding: 45px 20px;
     }
   }
+
   .PopularInteriorsItem {
     width: 100%;
     margin-bottom: 24px;
@@ -93,6 +99,7 @@
   .PopularInteriorsContainer {
     max-width: calc(100% - 100px);
   }
+
   .PopularInteriorsList {
     gap: 0;
   }

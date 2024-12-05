@@ -7,12 +7,15 @@
   text-align: right;
   margin-top: 34px;
 }
+
 .TextAlignRight .Title {
   margin-bottom: 33px;
 }
+
 .TextAlignRight .Desc {
   margin-bottom: 28px;
 }
+
 .PopularInteriorsRoom {
   display: flex;
   justify-content: space-between;
@@ -35,7 +38,7 @@
 .Title {
   font-size: 20px;
   font-family:
-    var(--font-Pretendard-bold),
+    var(--font-Montserrat-bold),
     -apple-system,
     BlinkMacSystemFont,
     'Malgun Gothic',
@@ -53,7 +56,7 @@
 .NoteHighlight {
   font-size: 20px;
   font-family:
-    var(--font-Pretendard-bold),
+    var(--font-Montserrat-bold),
     -apple-system,
     BlinkMacSystemFont,
     'Malgun Gothic',
@@ -68,7 +71,7 @@
 .Highlight {
   font-size: 32px;
   font-family:
-    var(--font-Pretendard-bold),
+    var(--font-Montserrat-bold),
     -apple-system,
     BlinkMacSystemFont,
     'Malgun Gothic',
@@ -81,6 +84,7 @@
   min-width: 552px;
   margin-bottom: 12px;
 }
+
 .BgMax img {
   border-radius: 16px;
 }
@@ -96,6 +100,7 @@
   flex-direction: row;
   gap: 12px;
 }
+
 .BgList img {
   border-radius: 12px;
 }
@@ -196,20 +201,24 @@
   .BlockRight {
     align-self: center;
   }
+
   .BlockLeft {
     min-width: 100%;
     text-align: center;
     margin-bottom: 40px;
     padding-right: 0;
   }
+
   .BgMax {
     min-width: calc(100% - 30px);
   }
+
   .DesignRoom {
     max-width: 419px;
     min-width: auto;
     margin: 0 auto;
   }
+
   .Desktop {
     display: none;
   }
@@ -225,17 +234,21 @@
   .desktop {
     display: none;
   }
+
   .mobile {
     display: block;
   }
+
   .BgList img {
     border-radius: 8px;
     width: 100%;
     height: 100%;
   }
+
   .AdvertisementList {
     flex-direction: column;
   }
+
   .DesignRoom {
     min-width: 100%;
   }
@@ -243,6 +256,7 @@
   .BgList {
     flex-wrap: wrap;
   }
+
   .BgMax img {
     border-radius: 8px;
     height: 100%;

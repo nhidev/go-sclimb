@@ -7,9 +7,11 @@
   box-shadow:
     20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
     5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
+
   :global {
     .membershipOptiosBlock_b-head {
       margin-bottom: 20rem;
+
       h3 {
         font-size: 24rem;
         line-height: 140%;
@@ -17,6 +19,7 @@
         margin-bottom: 12rem;
         white-space: break-spaces;
       }
+
       p {
         font-size: 12rem;
         font-weight: 500;
@@ -24,13 +27,14 @@
         white-space: break-spaces;
       }
     }
+
     .membershipOptiosBlock_b-body {
       table {
         .ant-table-thead {
           tr {
             .ant-table-cell {
               text-align: center;
-              font-family: 'Pretendard', sans-serif;
+              font-family: 'Montserrat', sans-serif;
               font-size: 12rem;
               font-weight: 500;
               line-height: 170%;
@@ -38,22 +42,26 @@
               padding: 6rem 2rem;
               height: auto;
               background: var(--ffe-8-ce, #ffe8ce);
+
               &:first-child {
                 border-radius: 4rem 0 0 4rem;
               }
+
               &:last-child {
                 border-radius: 0 4rem 4rem 0;
               }
+
               &::before {
                 display: none;
               }
             }
           }
         }
+
         .ant-table-tbody {
           tr {
             .ant-table-cell {
-              font-family: 'Pretendard', sans-serif;
+              font-family: 'Montserrat', sans-serif;
               font-size: 12rem 2rem;
               font-weight: 500;
               line-height: 170%;
@@ -61,6 +69,7 @@
               padding: 12rem 0;
               height: auto;
             }
+
             &:last-child {
               .ant-table-cell {
                 border-bottom: 0;
@@ -69,12 +78,14 @@
           }
         }
       }
+
       p {
         font-size: 16rem;
         font-weight: 500;
         color: var(--414751);
         white-space: break-spaces;
       }
+
       .membershipOptiosBlock_b-sub {
         color: var(--414751);
         font-size: 12rem;
@@ -88,16 +99,20 @@
   .MembershipOptiosBlock {
     padding: 80rem;
     border-radius: 40rem;
+
     :global {
       .membershipOptiosBlock_b-head {
         margin-bottom: 40rem;
+
         h3 {
           font-size: 40rem;
         }
+
         p {
           font-size: 20rem;
         }
       }
+
       .membershipOptiosBlock_b-body {
         table {
           .ant-table-thead {
@@ -105,15 +120,18 @@
               .ant-table-cell {
                 font-size: 16rem;
                 padding: 12rem 2rem;
+
                 &:first-child {
                   border-radius: 8rem 0 0 8rem;
                 }
+
                 &:last-child {
                   border-radius: 0 8rem 8rem 0;
                 }
               }
             }
           }
+
           .ant-table-tbody {
             tr {
               .ant-table-cell {
@@ -124,6 +142,7 @@
             }
           }
         }
+
         .membershipOptiosBlock_b-sub {
           font-size: 14rem;
         }

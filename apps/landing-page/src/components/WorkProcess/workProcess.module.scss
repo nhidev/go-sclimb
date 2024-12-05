@@ -9,7 +9,7 @@
   padding: 4px 10px;
   font-size: 16px;
   font-family:
-    var(--font-Pretendard-bold),
+    var(--font-Montserrat-bold),
     -apple-system,
     BlinkMacSystemFont,
     'Malgun Gothic',
@@ -20,7 +20,7 @@
 .HeaderStep {
   font-size: 28px;
   font-family:
-    var(--font-Pretendard-bold),
+    var(--font-Montserrat-bold),
     -apple-system,
     BlinkMacSystemFont,
     'Malgun Gothic',
@@ -28,6 +28,7 @@
   margin-bottom: 34px;
   margin-top: 24px;
 }
+
 .Desc {
   font-size: 16px;
   font-weight: 400;
@@ -68,6 +69,7 @@
   margin-top: 2px;
   margin-left: calc(-50% - 13px);
 }
+
 .Process2::before {
   content: '';
   position: absolute;
@@ -78,6 +80,7 @@
   margin-top: 2px;
   margin-left: 10px;
 }
+
 .Process3::after {
   content: '';
   position: absolute;
@@ -88,6 +91,7 @@
   margin-top: 2px;
   margin-left: calc(-50% - 20px);
 }
+
 .Process3::before {
   content: '';
   position: absolute;
@@ -98,6 +102,7 @@
   margin-top: 2px;
   margin-left: 12px;
 }
+
 .Process4::after {
   content: '';
   position: absolute;
@@ -237,14 +242,16 @@
   padding-top: 233px;
   margin-bottom: 38px;
 }
+
 .Step {
   font-size: 16px;
   font-weight: 400;
   position: relative;
 }
+
 .HighLight {
   font-family:
-    var(--font-Pretendard-bold),
+    var(--font-Montserrat-bold),
     -apple-system,
     BlinkMacSystemFont,
     'Malgun Gothic',
@@ -274,12 +281,15 @@
   .Mobile {
     display: block;
   }
+
   .WorkProcess {
     padding: 60px 16px;
   }
+
   .PolicyList {
     gap: 6px;
   }
+
   .Policy {
     padding: 18px 6px;
     min-width: 92px;
@@ -294,22 +304,28 @@
   .TextNote {
     font-size: 14px;
   }
+
   .FirstStep {
     margin-bottom: 60px;
   }
+
   .FirstProcess {
     flex-direction: column;
     margin: 43px auto 0;
   }
+
   .SecondStep {
     margin-bottom: 60px;
   }
+
   .Process2::before {
     display: none;
   }
+
   .Process3::before {
     display: none;
   }
+
   .Process1::after {
     width: 1px;
     height: 35px;
@@ -331,6 +347,7 @@
     margin-left: 15px;
     border-bottom: 0;
   }
+
   .Process3::after {
     width: 1px;
     height: 27px;
@@ -341,9 +358,11 @@
     margin-left: 15px;
     border-bottom: 0;
   }
+
   .Process4::after {
     display: none;
   }
+
   .Process {
     padding: 0;
     width: 160px;
@@ -351,9 +370,11 @@
     text-align: left;
     padding-left: 40px;
   }
+
   .Process br {
     display: none;
   }
+
   .Dot {
     left: 0;
     top: 50%;
@@ -368,10 +389,12 @@
     margin-top: -4px;
     left: 16px;
   }
+
   .Dot3 {
     margin-top: -4px;
     left: 16px;
   }
+
   .Dot4 {
     margin-top: -4px;
     left: 16px;
@@ -391,12 +414,14 @@
     left: 50%;
     margin-left: -110px;
   }
+
   .Right {
     right: 50%;
     margin-right: -110px;
     top: -100%;
     margin-top: 107px;
   }
+
   .ArrowIcon {
     transform: rotate(90deg);
   }

@@ -13,7 +13,7 @@ const withTheme = (node: JSX.Element) => {
           borderRadius: 2,
           colorLink: '#f6871f',
           colorTextBase: '#09101D',
-          fontFamily: 'var(--font-pretendard), sans-serif',
+          fontFamily: 'var(--font-Montserrat), sans-serif',
           fontSize: 14,
           colorPrimary: '#f6871f',
           colorLinkActive: '#f6871f',

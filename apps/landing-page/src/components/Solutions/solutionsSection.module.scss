@@ -9,6 +9,7 @@
   background: #db6a05;
   mix-blend-mode: multiply;
 }
+
 .solutionsSection li,
 .smallNoteContent,
 .sectionSubTitle {
@@ -16,18 +17,21 @@
   font-size: 16px;
   line-height: 26px;
 }
+
 .sectionTitle,
 .sectionSubTitle {
   color: #fff;
   text-align: center;
 }
+
 .sectionSubTitle {
   margin-bottom: 28px;
   font-weight: 400;
 }
+
 .sectionTitle {
   font-family:
-    var(--font-Pretendard-bold),
+    var(--font-Montserrat-bold),
     -apple-system,
     BlinkMacSystemFont,
     'Malgun Gothic',
@@ -58,11 +62,13 @@
   align-items: center;
   flex-direction: column;
 }
+
 .desNote {
   padding-left: 50px;
   height: 106.5px;
   margin-bottom: 40px;
 }
+
 .smallNote {
   padding-left: 26px;
   width: 272px;
@@ -78,11 +84,13 @@
   z-index: -1;
   left: 39px;
 }
+
 .desNoteBg {
   height: 106px;
   top: -2px;
   transform: skewY(-1.1deg);
 }
+
 .smallNoteBg {
   height: 100px;
   top: -1.5px;
@@ -120,71 +128,88 @@
   background-color: #fff;
   color: #212121;
 }
+
 .sectionContentCol {
   position: relative;
 }
-.sectionContentCol > img {
+
+.sectionContentCol>img {
   position: absolute;
   z-index: -1;
   left: 52%;
   bottom: 102px;
   width: 13px;
 }
+
 @media (max-width: 767px) {
+
   .solutionsSection li,
   .smallNoteContent,
   .sectionSubTitle {
     font-size: 14px;
     line-height: 24px;
   }
+
   .sectionTitle {
     font-size: 24px;
     line-height: 30px;
     padding: 0 0 20px;
   }
+
   .sectionTitle span:first-child {
     display: block;
     width: 100%;
   }
+
   .sectionTitle span:last-child {
     display: block;
     width: 100%;
   }
+
   .solutionsSection {
     padding: 40px 0 60px;
   }
+
   .sectionTitle {
     margin-bottom: 66px;
   }
+
   .maxWidthContent {
     width: 100%;
     margin-bottom: 60px;
     padding: 10px;
     flex-direction: column;
   }
-  .sectionContentCol > img {
+
+  .sectionContentCol>img {
     transform: translateX(-45%);
   }
+
   .maxWidthContent .sectionContentCol:first-child {
     margin-bottom: 120px;
   }
+
   .desNoteBg,
   .smallNoteBg {
     width: 240px;
     height: 105;
   }
+
   .smallNote,
   .desNote {
     width: 240px;
   }
+
   .desNoteBg,
   .smallNoteBg {
     left: 19px;
   }
+
   .desNote::before,
   .smallNote::before {
     width: 20px;
   }
+
   .desNote::after,
   .smallNote::after {
     width: calc(100% + 25px);

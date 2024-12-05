@@ -54,7 +54,7 @@
 
 .code {
   font-family:
-    var(--font-Pretendard-bold),
+    var(--font-Montserrat-bold),
     -apple-system,
     BlinkMacSystemFont,
     'Malgun Gothic',
@@ -132,6 +132,7 @@
 .logo {
   position: relative;
 }
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -227,6 +228,7 @@
   width: 100%;
   justify-content: center;
 }
+
 .information {
   font-size: 13px;
   font-weight: 400;
@@ -235,6 +237,7 @@
   text-align: center;
   color: #d4d4d4;
 }
+
 .BorderRight {
   position: relative;
   padding-right: 10px;
@@ -273,6 +276,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .BorderRight::after {
     width: 0;
   }
@@ -282,6 +286,7 @@
   from {
     transform: rotate(360deg);
   }
+
   to {
     transform: rotate(0deg);
   }

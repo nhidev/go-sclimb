@@ -21,10 +21,11 @@ p,
 button,
 span,
 label,
-li, 
+li,
 a {
-  font-family: var(--font-pretendard), sans-serif;
+  font-family: var(--font-Montserrat), sans-serif;
 }
+
 // End - Elements - Handle setting font-family
 
 body {
@@ -52,12 +53,14 @@ body {
   line-height: 140%;
   letter-spacing: -1px;
 }
+
 .H4_30pt_bold {
   font-size: 30rem;
   font-weight: 700;
   line-height: 140%;
   letter-spacing: -0.3rem;
 }
+
 .H4_30pt_medium {
   font-size: 30rem;
   font-style: normal;
@@ -204,6 +207,7 @@ body {
   font-weight: 600;
   line-height: 170%;
 }
+
 .P1_18pt_regular {
   font-size: 18rem;
   font-weight: 500;
@@ -276,6 +280,7 @@ body {
   font-weight: 700;
   line-height: 170%;
 }
+
 .P5_10pt_regular {
   font-size: 10rem;
   font-weight: 400;
