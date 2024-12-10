@@ -9,7 +9,7 @@ const footerData = [
 
   {
     label: 'Address:',
-    value: 'Floor 2 - 110 Tran Nao, An Khanh, Thu Đuc, HCM',
+    value: '86C, Song Hanh Street, An Phu Ward, Thu Duc City, Ho Chi Minh',
   },
   {
     label: 'Email:',

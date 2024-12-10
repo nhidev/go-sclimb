@@ -123,7 +123,7 @@ const LeadForm = () => {
       const link = document.createElement('a');
 
       // Set the download attribute with the desired filename
-      link.download = 'menu.pdf';
+      link.download = 'menu.jpg';
 
       // Set the href attribute to the path of your PDF file
       link.href = 'https://sclimb.com.vn/landing_page/download';
@@ -174,8 +174,8 @@ const LeadForm = () => {
             canSubmit
               ? handleSubmit
               : event => {
-                  event.preventDefault();
-                }
+                event.preventDefault();
+              }
           }
         >
           <div className={styles?.formBody}>

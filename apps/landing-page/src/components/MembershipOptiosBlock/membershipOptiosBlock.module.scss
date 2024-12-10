@@ -1,12 +1,12 @@
 .MembershipOptiosBlock {
-  padding: 30rem 30rem;
-  border-radius: 20rem;
-  background: var(--ffffff, #fff);
-  overflow: hidden;
-  margin-bottom: 20rem;
-  box-shadow:
-    20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
-    5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
+  // padding: 30rem 30rem;
+  // border-radius: 20rem;
+  // background: var(--ffffff, #fff);
+  // overflow: hidden;
+  // margin-bottom: 20rem;
+  // box-shadow:
+  //   20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
+  //   5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
   :global {
     .membershipOptiosBlock_b-head {
       margin-bottom: 20rem;
@@ -86,8 +86,8 @@
 
 @media (min-width: 768px) {
   .MembershipOptiosBlock {
-    padding: 80rem;
-    border-radius: 40rem;
+    // padding: 32rem;
+    // border-radius: 40rem;
     :global {
       .membershipOptiosBlock_b-head {
         margin-bottom: 40rem;
@@ -105,12 +105,12 @@
               .ant-table-cell {
                 font-size: 16rem;
                 padding: 12rem 2rem;
-                &:first-child {
-                  border-radius: 8rem 0 0 8rem;
-                }
-                &:last-child {
-                  border-radius: 0 8rem 8rem 0;
-                }
+                // &:first-child {
+                //   border-radius: 8rem 0 0 8rem;
+                // }
+                // &:last-child {
+                //   border-radius: 0 8rem 8rem 0;
+                // }
               }
             }
           }

@@ -24,47 +24,13 @@ const messages = [
   },
   {
     placement: 'right',
-    content: 'Cha cha cha.. 🤭 Vũ💪',
+    content: 'Su su!!! 💪',
   },
   {
     placement: 'right',
     content: 'Yep, yep, yep, nice, yep ...🤜🤛',
   },
 ];
-
-const block1Data: any = {
-  title: '메세지 보내기',
-  subTitle: '리퀘스트 타입을 선택한 후 요청 내용을 작성해주세요 \n작성이 완료된 메세지는 어드민에게 전송됩니다',
-  detailTitle: '내용',
-  detailDescription: '요청사항을 입력해주세요',
-  dropdownTitle: '리퀘스트 타입',
-  dropdownText: '오피스 클리닝',
-  sub: '요청 사항 메시지 발송',
-};
-const block2Data: any = {
-  title: '처리 중인 요청사항',
-  subTitle: 'Request in Progress',
-  items: [
-    {
-      title: '오피스 클리닝',
-      value: 1,
-    },
-    {
-      title: 'Q&A',
-      value: 8,
-    },
-    {
-      title: '긴급',
-      value: 5,
-      highlight: true,
-    },
-    {
-      title: '불만사항',
-      value: 0,
-    },
-  ],
-  sub: '작업 과정은 대시보드에서 확인',
-};
 
 const MembershipAndEvents = memo(() => (
   <section className={styles.MembershipAndEvents} id="office-cleaning">
@@ -98,7 +64,7 @@ const MembershipAndEvents = memo(() => (
         </div>
       </div>
     </div>
-    
+
   </section>
 ));
 

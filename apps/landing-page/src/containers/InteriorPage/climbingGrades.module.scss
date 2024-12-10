@@ -73,12 +73,12 @@
 
         .climbingGrades-content {
           border-radius: 20rem;
-          background: var(--f-4-f-6-f-9, #f4f6f9);
+          // background: var(--f-4-f-6-f-9, #f4f6f9);
           position: relative;
-          box-shadow:
-            20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
-            5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
-          padding: 30rem;
+          // box-shadow:
+          //   20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
+          //   5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
+          // padding: 30rem;
           img {
             height: auto;
           }
@@ -241,9 +241,9 @@
           }
 
           .climbingGrades-content {
-            border-radius: 40rem;
+            // border-radius: 40rem;
             width: 840rem;
-            padding: 40rem;
+            // padding: 40rem;
             img {
               height: auto;
             }

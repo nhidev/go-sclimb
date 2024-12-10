@@ -49,10 +49,10 @@ export default async function Interior() {
         <ScrollTrigger>
           <ClimbingGrades/>
         </ScrollTrigger>  
-        <LeadFormN />
+        {/* <LeadFormN /> */}
       </main>
       <Footer />
-      <FixedFooter textBtn="Send a message" />
+      {/* <FixedFooter textBtn="Send a message" /> */}
     </>
   );
 }

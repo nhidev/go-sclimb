@@ -23,7 +23,7 @@ export default function Operation() {
         <LeadFormN />
       </main>
       <Footer />
-      <FixedFooter textBtn='Send a message' />
+      {/* <FixedFooter textBtn='Send a message' /> */}
     </>
   );
 }

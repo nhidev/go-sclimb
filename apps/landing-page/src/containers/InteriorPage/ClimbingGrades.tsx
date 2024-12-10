@@ -23,7 +23,7 @@ const ClimbingGrades = memo(() => (
           </h4>
         </div>
         <div className="climbingGrades-content fade-up-element">
-          <Image width={600} height={400} src="/imagesN/grading-scale.png" priority alt="Boulder grading scale" />
+          <Image width={1024} height={768} src="/imagesN/grading-scale.png" priority alt="Boulder grading scale" />
 
         </div>
       </div>

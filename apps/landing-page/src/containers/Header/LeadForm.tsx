@@ -133,7 +133,7 @@ const LeadFormN = memo(() => {
             width={620}
             closeIcon={<Image width={18} height={18} src="/iconsN/Icon_close.svg" alt="close" />}
           >
-             {leadFormModal.isDownload ?<Image width={600} height={700} src="/imagesN/menu.png" alt="schill menu" />:
+             {leadFormModal.isDownload ?<Image width={600} height={700} src="/imagesN/menu.jpg" alt="schill menu" />:
              (
               <>
             <div className="form_b-head">

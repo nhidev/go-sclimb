@@ -78,17 +78,17 @@
         }
 
         .introToClimbing-content {
-          background: var(--f-8-f-1-ec, #f8f1ec);
-          box-shadow:
-            20rem 20rem 60rem 0px rgba(139, 140, 160, 0.4),
-            5rem 5rem 15rem 0px rgba(139, 140, 160, 0.15);
-          border-radius: 20rem;
+          // background: var(--f-8-f-1-ec, #f8f1ec);
+          // box-shadow:
+          //   20rem 20rem 60rem 0px rgba(139, 140, 160, 0.4),
+          //   5rem 5rem 15rem 0px rgba(139, 140, 160, 0.15);
+          // border-radius: 20rem;
           padding: 0;
           overflow-y: hidden;
 
           .introToClimbing-block {
             position: relative;
-            padding: 30rem;
+            // padding: 30rem;
 
             img {
               z-index: 1;

@@ -34,10 +34,10 @@ const IntroGymSlider = memo(() => {
     <section className={styles.IntroGymSlider}>
       <div className="introGymSlider_b-container">
         <div className="introGymSlider_b-head">
-        <h2>OUR COMMUNITY</h2>
+          <h2>OUR COMMUNITY</h2>
           <p>Whether you are an experienced climber or brand-new to Sclimb Gym,
-there’s never been a better time to pay us a visit.
-It seriously might change your life, It has for many people!</p>
+            there’s never been a better time to pay us a visit.
+            It seriously might change your life, It has for many people!</p>
         </div>
 
         <Default>
@@ -66,7 +66,7 @@ It seriously might change your life, It has for many people!</p>
             <Default>
               <div className="introGymSlider-desc">
                 <h4>Our Address</h4>
-                <p>Floor 2 - 110 Tran Nao, An Khanh, Thu Đuc, HCM</p>
+                <p>86C, Song Hanh Street, An Phu Ward, Thu Duc City, Ho Chi Minh</p>
                 <h4>Hours of Operation</h4>
                 <p>Monday to Sunday 10apm - 10pm</p>
                 <h4>Any Questions?</h4>
@@ -121,7 +121,7 @@ It seriously might change your life, It has for many people!</p>
           <Mobile>
             <div className="introGymSlider-desc">
               <h4>Our Address</h4>
-              <p>Floor 2 - 110 Tran Nao, An Khanh, Thu Đuc, HCM</p>
+              <p>86C, Song Hanh Street, An Phu Ward, Thu Duc City, Ho Chi Minh</p>
               <h4>Hours of Operation</h4>
               <p>Monday to Sunday 10apm - 10pm</p>
               <h4>Any Questions?</h4>

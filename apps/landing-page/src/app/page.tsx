@@ -20,13 +20,13 @@ export default function HomeN() {
         <ScrollTrigger>
         <FeaturedServiceSection />
           <MembershipAndEvents />     
-          <CrossMemberSlider /> 
+          {/* <CrossMemberSlider />  */}
          <IntroGymSlider/>
         </ScrollTrigger>
         <LeadFormN />
       </main>
       <Footer />
-      <FixedFooter textBtn='Send a message' />
+      {/* <FixedFooter textBtn='Send a message' /> */}
     </>
   );
 }

@@ -66,6 +66,8 @@ img {
       5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
       img {
         height: auto;
+        max-height: 90vh;
+        object-fit: inherit;
       }
     .ant-modal-close {
       background-color: transparent;
@@ -165,7 +167,7 @@ img {
 
   @media (min-width: 768px) {
     .ant-modal-content {
-      padding: 40rem;
+      padding: 24rem;
       border-radius: 40rem;
       .ant-modal-close {
         top: 60rem;

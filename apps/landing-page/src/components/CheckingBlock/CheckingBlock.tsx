@@ -46,10 +46,10 @@ const pieData: any = [
 const rentailsData = [
   {
     name: 'SHOES',
-    price: '25.000',
+    price: '30.000',
   },
   {
-    name: 'CHALK',
+    name: 'HARNESS',
     price: '30.000',
   },
 ];
@@ -91,8 +91,7 @@ export default function CheckingBlock({ className = '' }: CheckingBlockProps) {
          subTitle="CLIMBING STUFFS"
         items={climbingStuffsData}
         className="fade-up-element show-desktop"
-        /> 
-       
+        />  
       </div>
    
     </div>

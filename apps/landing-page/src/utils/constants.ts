@@ -53,7 +53,7 @@ export const TAB_CONTENT = [
 
 export const MEMBERSHIP_OPTIONS = [
   {
-    title: 'MEMBERSHIP TYPE',
+    title: 'PRICING TYPE',
     dataIndex: 'type',
     key: 'type',
   },
@@ -63,242 +63,104 @@ export const MEMBERSHIP_OPTIONS = [
     key: 'adult',
   },
   {
-    title: 'KID/STUDENT',
-    dataIndex: 'young',
-    key: 'young',
-  }
+    title: 'STUDENT',
+    dataIndex: 'student',
+    key: 'student',
+  },
+  {
+    title: 'KID',
+    dataIndex: 'kid',
+    key: 'kid',
+  },
 ];
 
 export const DATA_MEMBERSHIP = [
   {
     key: '1',
+    type: 'SINGLE TICKET',
+    adult: '180.000 VND',
+    kid: '140.000 VND',
+  },
+  {
+    key: '2',
+    type: 'PUNCH CARDS',
+    adult: '1.710.000 VND',
+    kid: '133.000 VND',
+  },
+  {
+    key: '3',
     type: '1 MONTH',
-    adult: '1.400.000 VND',
-    young: '900.000 VND',
+    adult: '1.440.000 VND',
+    student: '800.000 VND',
+    kid: '1.120.000 VND',
+  },
+  {
+    key: '4',
+    type: '3 MONTHS',
+    adult: '3.600.000 VND',
+    kid: '2.800.000 VND',
+  },
+  {
+    key: '5',
+    type: '6 MONTHS',
+    adult: '5.760.000 VND',
+    kid: '4.480.000 VND',
+  },
+  {
+    key: '6',
+    type: '1 YEAR',
+    adult: '10.080.000 VND',
+    kid: '7.840.000 VND',
+  },
+];
+
+export const CLASSES_OPTIONS = [
+  {
+    title: 'CLASS TYPE',
+    dataIndex: 'type',
+    key: 'type',
+  },
+  {
+    title: 'ADULT',
+    dataIndex: 'adult',
+    key: 'adult',
+  },
+  {
+    title: 'STUDENT',
+    dataIndex: 'student',
+    key: 'student',
+  },
+  {
+    title: 'KID',
+    dataIndex: 'kid',
+    key: 'kid',
+  },
+];
+
+export const DATA_CLASSES = [
+  {
+    key: '1',
+    type: '1 MONTH CLASS',
+    adult: '2.160.000 VND',
+    student: '1.100.000 VND',
+    kid: '1.680.000 VND',
   },
   {
     key: '2',
     type: '3 MONTHS',
-    adult: '3.250.000 VND',
-    young: '2.200.000 VND',
+    adult: '5.400.000 VND',
+    kid: '4.200.000 VND',
   },
   {
     key: '3',
     type: '6 MONTHS',
-    adult: '5.350.000 VND',
-    young: '3.690.000 VND',
+    adult: '8.640.000 VND',
+    kid: '6.720.000 VND',
   },
   {
     key: '4',
     type: '1 YEAR',
-    adult: '10.270.000 VND',
-    young: '6.970.000 VND',
-  }
-];
-
-export const COLUMNS_SERVICE = [
-  {
-    title: '품목명',
-    dataIndex: 'name',
-    key: 'name',
-  },
-  {
-    title: '단가',
-    dataIndex: 'price',
-    key: 'price',
-  },
-  {
-    title: '품목 사용량',
-    dataIndex: 'itemUsage',
-    key: 'itemUsage',
-  },
-];
-
-export const DATA_SERVICE = [
-  {
-    key: '1',
-    name: '종이컵 12oz',
-    price: '24,000 원',
-    itemUsage: '20',
-  },
-  {
-    key: '2',
-    name: '계피원두 (할리스)',
-    price: '9,900 원',
-    itemUsage: '5',
-  },
-  {
-    key: '3',
-    name: '매일우유 바리스타',
-    price: '3,000 원',
-    itemUsage: '5',
-  },
-  {
-    key: '4',
-    name: '물티슈',
-    price: '15,000 원',
-    itemUsage: '13',
-  },
-  {
-    key: '5',
-    name: '복사용지 A4',
-    price: '2,500 원',
-    itemUsage: '15',
-  },
-];
-
-export const PIE_01_DATA: any = [
-  {
-    key: '원두 커피',
-    type: '원두 커피',
-    value: 32,
-    color: '#f6871f',
-  },
-  {
-    key: '물티슈',
-    type: '물티슈',
-    value: 17,
-    color: '#FFB25C',
-  },
-  {
-    key: '시리얼',
-    type: '시리얼',
-    value: 15,
-    color: '#FFE8CE',
-  },
-  {
-    key: '보드마카',
-    type: '보드마카',
-    value: 8,
-    color: '#FFF7EF',
-  },
-  {
-    key: '우유',
-    type: '우유',
-    value: 8,
-    color: '#FFF',
-  },
-  {
-    key: '티백',
-    type: '티백',
-    value: 7,
-    color: '#EBD5C7',
-  },
-  {
-    key: '핸드타월',
-    type: '핸드타월',
-    value: 5,
-    color: '#F8F1EC',
-  },
-  {
-    key: 'A4용지',
-    type: 'A4용지',
-    value: 5,
-    color: '#FFF',
-  },
-  {
-    key: '종이컵',
-    type: '종이컵',
-    value: 4,
-    color: '#FFF7EF',
-  },
-];
-
-export const PIE_02_DATA: any = [
-  {
-    key: 'TEAM A',
-    type: 'TEAM A',
-    value: 48,
-    color: '#f6871f',
-  },
-  {
-    key: 'TEAM B',
-    type: 'TEAM B',
-    value: 34,
-    color: '#FFB25C',
-  },
-  {
-    key: 'TEAM C',
-    type: 'TEAM C',
-    value: 16,
-    color: '#FFE8CE',
-  },
-  {
-    key: 'TEAM D',
-    type: 'TEAM D',
-    value: 12,
-    color: '#FFF7EF',
-  },
-  {
-    key: 'TEAM E',
-    type: 'TEAM E',
-    value: 8,
-    color: '#FFF',
-  },
-];
-
-export const PIE_03_DATA: any = [
-  {
-    key: 1,
-    type: '원두 커피',
-    value: 37,
-    color: '#f6871f',
-  },
-  {
-    key: 2,
-    type: '핸드타월',
-    value: 26,
-    color: '#FFB25C',
-  },
-  {
-    key: 3,
-    type: '시리얼',
-    value: 25,
-    color: '#FFC98D',
-  },
-  {
-    key: 4,
-    type: '기타',
-    value: 22,
-    color: '#FFF7EF',
-  },
-  {
-    key: 5,
-    type: '티백',
-    value: 12,
-    color: '#FFF',
-  },
-  {
-    key: 6,
-    type: '물티슈',
-    value: 8,
-    color: '#EBD5C7',
-  },
-];
-
-export const PIE_04_DATA: any = [
-  {
-    key: 1,
-    type: '양이 부족함',
-    value: 50,
-    color: '#f6871f',
-  },
-  {
-    key: 2,
-    type: '다양한 종류',
-    value: 37,
-    color: '#FFB25C',
-  },
-  {
-    key: 3,
-    type: '메뉴 변경',
-    value: 20,
-    color: '#FFF7EF',
-  },
-  {
-    key: 4,
-    type: '음료수 추가',
-    value: 12,
-    color: '#FFF',
+    adult: '15.120.000 VND',
+    kid: '11.760.000 VND',
   },
 ];

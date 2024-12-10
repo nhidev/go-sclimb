@@ -74,11 +74,17 @@
         margin-bottom: 20rem;
         position: relative;
         z-index: 1;
+
+        .pricingBlock {}
       }
 
       .pricingAndMembershipSectionMiddle_b-right {
         position: relative;
         z-index: 2;
+
+        .classBlock {
+          background:#fff;
+        }
       }
     }
 
