@@ -8,7 +8,7 @@ import styles from './featuredServiceSection.module.scss';
 const data = [
   {
     id: 1,
-    title: 'BOULDERING',
+    title: 'BOULDERING/TOPROPE',
     icon: '/imagesN/climbing-gym.png',
     description: 'Discover our climbing routes for all levels! All you need is a can-do attitude and comfortable clothing; we’ve got the rest!',
   },
