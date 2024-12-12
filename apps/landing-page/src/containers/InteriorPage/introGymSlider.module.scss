@@ -1,11 +1,11 @@
 @import '@/app/styles/_mixin';
 .IntroGymSlider {
-  padding: 130rem 0;
+  padding: 60rem 0;
   :global {
     .introGymSlider_b-container {
       .introGymSlider_b-head {
         text-align: center;
-        margin: 0 auto 60rem;
+        margin: 0 auto 30rem;
         p {
           @include P1_18pt_medium;
           line-height: 170%;
