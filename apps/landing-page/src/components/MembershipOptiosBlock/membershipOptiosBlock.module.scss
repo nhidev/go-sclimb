@@ -25,6 +25,9 @@
       }
     }
     .membershipOptiosBlock_b-body {
+      .ant-table {
+        background: transparent;
+      }
       table {
         .ant-table-thead {
           tr {
@@ -37,7 +40,7 @@
               color: var(--09101-d, #09101d);
               padding: 6rem 2rem;
               height: auto;
-              background: var(--ffe-8-ce, #ffe8ce);
+              background:var(--ffe-8-ce, #ffe8ce);
               &:first-child {
                 border-radius: 4rem 0 0 4rem;
               }
@@ -57,7 +60,7 @@
               font-size: 12rem 2rem;
               font-weight: 500;
               line-height: 170%;
-              color: var(--798087, #798087);
+              // color: var(--798087, #798087);
               padding: 12rem 0;
               height: auto;
             }
