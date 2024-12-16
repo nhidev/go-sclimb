@@ -85,7 +85,7 @@ export const DATA_MEMBERSHIP = [
     key: '2',
     type: 'PUNCH CARDS',
     adult: '1.710.000 VND',
-    kid: '133.000 VND',
+    kid: '1.330.000 VND',
   },
   {
     key: '3',
